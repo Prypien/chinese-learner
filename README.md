@@ -1,8 +1,16 @@
 # Chinese Learner
 
-Handwriting practice for **A Course in Contemporary Chinese** (當代中文課程), Book 1, Lessons 1–4 — Traditional Chinese.
+Handwriting practice for **A Course in Contemporary Chinese** (當代中文課程), Book 1, Lessons 1–4.
 
-**Live site:** https://prypien.github.io/chinese-learner/
+## Open the app (iPad / phone / browser)
+
+**https://prypien.github.io/chinese-learner/**
+
+This is the website — not the GitHub repo page below. Bookmark this link on your iPad.
+
+> **First time setup:** In the repo go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**. After the next push, the app URL above will work (not the README).
+
+The GitHub repo page (`github.com/Prypien/chinese-learner`) only shows code and this README. That is normal.
 
 The app is **fully static** (HTML, CSS, JavaScript). No server is required in production. GitHub Pages hosts the built files from the `out/` folder.
 

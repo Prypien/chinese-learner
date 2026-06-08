@@ -2,6 +2,7 @@
   "name": "chinese-learner",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://prypien.github.io/chinese-learner/",
   "scripts": {
     "dev": "node scripts/copy-char-data.mjs && next dev",
     "build": "node scripts/copy-char-data.mjs && next build",
