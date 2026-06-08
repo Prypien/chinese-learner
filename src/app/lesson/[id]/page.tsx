@@ -26,10 +26,10 @@ export default async function LessonPage({
       <Header />
       <main className="mx-auto max-w-4xl flex-1 px-4 py-8">
         <Link
-          href="/lektionen"
+          href="/lessons"
           className="mb-6 inline-block text-sm text-zinc-500 hover:text-red-600"
         >
-          ← Lektionen
+          ← Lessons
         </Link>
         <LessonDetail lesson={lesson} />
       </main>

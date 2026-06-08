@@ -3,13 +3,13 @@
   "title": {
     "zh": "請問一共多少錢？",
     "pinyin": "Qǐngwèn yīgòng duōshǎo qián?",
-    "de": "Entschuldigung, wie viel kostet das insgesamt?"
+    "de": "Excuse me, how much is the total?"
   },
   "objectives": [
-    "Preise fragen und nennen",
-    "Zählwörter für Geld und Gegenstände verwenden",
-    "百, 千, 萬 für Zahlen kennen",
-    "幫 und 能/不能 anwenden"
+    "Ask and state prices",
+    "Use measure words for money and objects",
+    "Learn 百, 千, 萬 for numbers",
+    "Apply 幫 and 能/不能"
   ],
   "dialogues": [
     {
@@ -17,58 +17,58 @@
       "title": {
         "zh": "對話一",
         "pinyin": "Duìhuà yī",
-        "de": "Dialog I — Im Geschäft"
+        "de": "Dialog I — At the Shop"
       },
       "lines": [
         {
           "speaker": "陳月美",
           "zh": "請問，這杯咖啡多少錢？",
           "pinyin": "Qǐngwèn, zhè bēi kāfēi duōshǎo qián?",
-          "de": "Entschuldigung, wie viel kostet diese Tasse Kaffee?"
+          "de": "Excuse me, how much is this cup of coffee?"
         },
         {
           "speaker": "老闆",
           "zh": "一杯咖啡八十塊錢。",
           "pinyin": "Yì bēi kāfēi bāshí kuài qián.",
-          "de": "Eine Tasse Kaffee kostet achtzig Dollar."
+          "de": "One cup of coffee is eighty NT dollars."
         },
         {
           "speaker": "陳月美",
           "zh": "我要兩杯，一共多少錢？",
           "pinyin": "Wǒ yào liǎng bēi, yīgòng duōshǎo qián?",
-          "de": "Ich möchte zwei Tassen, wie viel kostet das insgesamt?"
+          "de": "I'd like two cups — how much is the total?"
         },
         {
           "speaker": "老闆",
           "zh": "一共一百六十塊錢。",
           "pinyin": "Yīgòng yībǎi liùshí kuài qián.",
-          "de": "Insgesamt einhundertsechzig Dollar."
+          "de": "One hundred sixty NT dollars in total."
         },
         {
           "speaker": "陳月美",
           "zh": "好的，謝謝！",
           "pinyin": "Hǎo de, xièxie!",
-          "de": "Okay, danke!"
+          "de": "Okay, thank you!"
         }
       ],
       "comprehensionQuestions": [
         {
           "id": "l4-d1-q1",
-          "questionDe": "Wie viel kostet eine Tasse Kaffee?",
+          "questionDe": "How much does one cup of coffee cost?",
           "answerType": "text",
           "correctAnswer": "八十",
           "acceptableAnswers": ["80", "achtzig", "八十", "八十塊"]
         },
         {
           "id": "l4-d1-q2",
-          "questionDe": "Wie viele Tassen möchte 陳月美?",
+          "questionDe": "How many cups does 陳月美 want?",
           "answerType": "text",
           "correctAnswer": "兩杯",
           "acceptableAnswers": ["2", "zwei", "兩杯", "兩"]
         },
         {
           "id": "l4-d1-q3",
-          "questionDe": "Wie viel kostet alles zusammen?",
+          "questionDe": "How much does everything cost together?",
           "answerType": "text",
           "correctAnswer": "一百六十",
           "acceptableAnswers": ["160", "einhundertsechzig", "一百六十", "一百六十塊"]
@@ -80,57 +80,57 @@
       "title": {
         "zh": "對話二",
         "pinyin": "Duìhuà èr",
-        "de": "Dialog II — Handys kaufen"
+        "de": "Dialog II — Buying a Cell Phone"
       },
       "lines": [
         {
           "speaker": "王開文",
           "zh": "這支手機多少錢？",
           "pinyin": "Zhè zhī shǒujī duōshǎo qián?",
-          "de": "Wie viel kostet dieses Handy?"
+          "de": "How much is this cell phone?"
         },
         {
           "speaker": "店員",
           "zh": "這支手機一萬塊錢。",
           "pinyin": "Zhè zhī shǒujī yí wàn kuài qián.",
-          "de": "Dieses Handy kostet zehntausend Dollar."
+          "de": "This cell phone costs ten thousand NT dollars."
         },
         {
           "speaker": "王開文",
           "zh": "新手機能上網嗎？",
           "pinyin": "Xīn shǒujī néng shàngwǎng ma?",
-          "de": "Kann das neue Handy ins Internet?"
+          "de": "Can the new phone go online?"
         },
         {
           "speaker": "店員",
           "zh": "當然能！請幫我包起來。",
           "pinyin": "Dāngrán néng! Qǐng bāng wǒ bāo qǐlái.",
-          "de": "Natürlich! Bitte verpacken Sie es für mich."
+          "de": "Of course! Please wrap it up for me."
         },
         {
           "speaker": "王開文",
           "zh": "好的，我要這支新的。",
           "pinyin": "Hǎo de, wǒ yào zhè zhī xīn de.",
-          "de": "Okay, ich nehme dieses neue."
+          "de": "Okay, I'll take this new one."
         }
       ],
       "comprehensionQuestions": [
         {
           "id": "l4-d2-q1",
-          "questionDe": "Wie viel kostet das Handy?",
+          "questionDe": "How much does the cell phone cost?",
           "answerType": "text",
           "correctAnswer": "一萬",
           "acceptableAnswers": ["10000", "zehntausend", "一萬", "一萬塊"]
         },
         {
           "id": "l4-d2-q2",
-          "questionDe": "Kann das neue Handy ins Internet?",
+          "questionDe": "Can the new phone go online?",
           "answerType": "yesno",
           "correctAnswer": "ja"
         },
         {
           "id": "l4-d2-q3",
-          "questionDe": "Welches Handy kauft 王開文?",
+          "questionDe": "Which phone does 王開文 buy?",
           "answerType": "text",
           "correctAnswer": "新的",
           "acceptableAnswers": ["das neue", "新的", "新", "new"]
@@ -139,63 +139,63 @@
     }
   ],
   "vocabulary": [
-    { "id": "l4-v01", "traditional": "多少", "pinyin": "duōshǎo", "german": "wie viel / wie viele", "pos": "Fragewort" },
-    { "id": "l4-v02", "traditional": "錢", "pinyin": "qián", "german": "Geld", "pos": "Nomen" },
-    { "id": "l4-v03", "traditional": "一共", "pinyin": "yīgòng", "german": "insgesamt", "pos": "Adverb" },
-    { "id": "l4-v04", "traditional": "百", "pinyin": "bǎi", "german": "hundert", "pos": "Zahl" },
-    { "id": "l4-v05", "traditional": "千", "pinyin": "qiān", "german": "tausend", "pos": "Zahl" },
-    { "id": "l4-v06", "traditional": "萬", "pinyin": "wàn", "german": "zehntausend", "pos": "Zahl" },
-    { "id": "l4-v07", "traditional": "塊", "pinyin": "kuài", "german": "Stück (Geld/Euro)", "pos": "Zählwort" },
-    { "id": "l4-v08", "traditional": "杯", "pinyin": "bēi", "german": "Tasse / Glas", "pos": "Zählwort" },
-    { "id": "l4-v09", "traditional": "支", "pinyin": "zhī", "german": "Stück (Handy, Stift)", "pos": "Zählwort" },
-    { "id": "l4-v10", "traditional": "包", "pinyin": "bāo", "german": "Packung / Tüte", "pos": "Zählwort" },
-    { "id": "l4-v11", "traditional": "種", "pinyin": "zhǒng", "german": "Sorte / Art", "pos": "Zählwort" },
-    { "id": "l4-v12", "traditional": "能", "pinyin": "néng", "german": "können / fähig sein", "pos": "Verb" },
-    { "id": "l4-v13", "traditional": "幫", "pinyin": "bāng", "german": "helfen / für jemanden", "pos": "Verb" },
-    { "id": "l4-v14", "traditional": "賣", "pinyin": "mài", "german": "verkaufen", "pos": "Verb" },
-    { "id": "l4-v15", "traditional": "上網", "pinyin": "shàngwǎng", "german": "ins Internet gehen", "pos": "Verb" },
-    { "id": "l4-v16", "traditional": "見面", "pinyin": "jiànmiàn", "german": "sich treffen", "pos": "Verb" },
-    { "id": "l4-v17", "traditional": "結束", "pinyin": "jiéshù", "german": "beenden", "pos": "Verb" },
-    { "id": "l4-v18", "traditional": "希望", "pinyin": "xīwàng", "german": "hoffen", "pos": "Verb" },
-    { "id": "l4-v19", "traditional": "新", "pinyin": "xīn", "german": "neu", "pos": "Adjektiv" },
-    { "id": "l4-v20", "traditional": "小", "pinyin": "xiǎo", "german": "klein", "pos": "Adjektiv" },
-    { "id": "l4-v21", "traditional": "男", "pinyin": "nán", "german": "männlich", "pos": "Adjektiv" },
-    { "id": "l4-v22", "traditional": "油", "pinyin": "yóu", "german": "ölig / fettig", "pos": "Adjektiv" },
-    { "id": "l4-v23", "traditional": "當然", "pinyin": "dāngrán", "german": "natürlich", "pos": "Adverb" },
-    { "id": "l4-v24", "traditional": "所以", "pinyin": "suǒyǐ", "german": "deshalb / also", "pos": "Konjunktion" },
-    { "id": "l4-v25", "traditional": "了", "pinyin": "le", "german": "Partikel (Veränderung)", "pos": "Partikel" },
-    { "id": "l4-v26", "traditional": "蛋糕", "pinyin": "dàngāo", "german": "Kuchen", "pos": "Nomen" },
-    { "id": "l4-v27", "traditional": "包子", "pinyin": "bāozi", "german": "Dampfbrot (gefüllt)", "pos": "Nomen" },
-    { "id": "l4-v28", "traditional": "老闆", "pinyin": "lǎobǎn", "german": "Chef / Ladenbesitzer", "pos": "Nomen" },
-    { "id": "l4-v29", "traditional": "媽媽", "pinyin": "māma", "german": "Mama", "pos": "Nomen" },
-    { "id": "l4-v30", "traditional": "國家", "pinyin": "guójiā", "german": "Land / Staat", "pos": "Nomen" },
-    { "id": "l4-v31", "traditional": "語言中心", "pinyin": "yǔyán zhōngxīn", "german": "Sprachzentrum", "pos": "Nomen" },
-    { "id": "l4-v32", "traditional": "秤", "pinyin": "chèng", "german": "Waage", "pos": "Nomen" },
-    { "id": "l4-v33", "traditional": "外帶", "pinyin": "wài dài", "german": "zum Mitnehmen", "pos": "Nomen" },
-    { "id": "l4-v34", "traditional": "誰", "pinyin": "shéi", "german": "wer", "pos": "Fragewort" },
-    { "id": "l4-v35", "traditional": "好啊", "pinyin": "hǎo a", "german": "okay! / gerne!", "pos": "Antwort" },
-    { "id": "l4-v36", "traditional": "太客氣", "pinyin": "tài kèqì", "german": "zu höflich", "pos": "Ausdruck" },
-    { "id": "l4-v37", "traditional": "太好了", "pinyin": "tài hǎo le", "german": "Super! / Toll! / Ausgezeichnet!", "pos": "Ausdruck", "searchTerms": ["tai le", "tai hao le", "taihaole", "太好了", "super", "toll", "great", "excellent", "prima"] },
-    { "id": "l4-v38", "traditional": "雞肉飯加蛋", "pinyin": "jīròu fàn jiā dàn", "german": "Hühnchenreis mit Ei", "pos": "Phrase", "searchTerms": ["hühnchen reis mit ei", "haehnchen reis mit ei", "huhn reis mit ei", "hühnchenreis mit ei", "chicken rice egg", "ji rou fan jia dan"] },
-    { "id": "l4-v39", "traditional": "雞肉飯", "pinyin": "jīròu fàn", "german": "Hühnchenreis", "pos": "Nomen", "searchTerms": ["hühnchen reis", "haehnchen reis", "huhn reis", "chicken rice"] },
-    { "id": "l4-v40", "traditional": "雞蛋", "pinyin": "jīdàn", "german": "Ei / Hühnerei", "pos": "Nomen", "searchTerms": ["ei", "hühnerei", "egg"] }
+    { "id": "l4-v01", "traditional": "多少", "pinyin": "duōshǎo", "german": "how much / how many", "pos": "Fragewort" },
+    { "id": "l4-v02", "traditional": "錢", "pinyin": "qián", "german": "money", "pos": "Nomen" },
+    { "id": "l4-v03", "traditional": "一共", "pinyin": "yīgòng", "german": "in total / altogether", "pos": "Adverb" },
+    { "id": "l4-v04", "traditional": "百", "pinyin": "bǎi", "german": "hundred", "pos": "Zahl" },
+    { "id": "l4-v05", "traditional": "千", "pinyin": "qiān", "german": "thousand", "pos": "Zahl" },
+    { "id": "l4-v06", "traditional": "萬", "pinyin": "wàn", "german": "ten thousand", "pos": "Zahl" },
+    { "id": "l4-v07", "traditional": "塊", "pinyin": "kuài", "german": "NT dollar (measure word for money)", "pos": "Zählwort" },
+    { "id": "l4-v08", "traditional": "杯", "pinyin": "bēi", "german": "cup / glass", "pos": "Zählwort" },
+    { "id": "l4-v09", "traditional": "支", "pinyin": "zhī", "german": "measure word (cell phone, pen)", "pos": "Zählwort" },
+    { "id": "l4-v10", "traditional": "包", "pinyin": "bāo", "german": "bag / package", "pos": "Zählwort" },
+    { "id": "l4-v11", "traditional": "種", "pinyin": "zhǒng", "german": "kind / type", "pos": "Zählwort" },
+    { "id": "l4-v12", "traditional": "能", "pinyin": "néng", "german": "can / to be able to", "pos": "Verb" },
+    { "id": "l4-v13", "traditional": "幫", "pinyin": "bāng", "german": "to help / to do for someone", "pos": "Verb" },
+    { "id": "l4-v14", "traditional": "賣", "pinyin": "mài", "german": "to sell", "pos": "Verb" },
+    { "id": "l4-v15", "traditional": "上網", "pinyin": "shàngwǎng", "german": "to go online", "pos": "Verb" },
+    { "id": "l4-v16", "traditional": "見面", "pinyin": "jiànmiàn", "german": "to meet (in person)", "pos": "Verb" },
+    { "id": "l4-v17", "traditional": "結束", "pinyin": "jiéshù", "german": "to end / to finish", "pos": "Verb" },
+    { "id": "l4-v18", "traditional": "希望", "pinyin": "xīwàng", "german": "to hope", "pos": "Verb" },
+    { "id": "l4-v19", "traditional": "新", "pinyin": "xīn", "german": "new", "pos": "Adjektiv" },
+    { "id": "l4-v20", "traditional": "小", "pinyin": "xiǎo", "german": "small", "pos": "Adjektiv" },
+    { "id": "l4-v21", "traditional": "男", "pinyin": "nán", "german": "male", "pos": "Adjektiv" },
+    { "id": "l4-v22", "traditional": "油", "pinyin": "yóu", "german": "oily / greasy", "pos": "Adjektiv" },
+    { "id": "l4-v23", "traditional": "當然", "pinyin": "dāngrán", "german": "of course", "pos": "Adverb" },
+    { "id": "l4-v24", "traditional": "所以", "pinyin": "suǒyǐ", "german": "therefore / so", "pos": "Konjunktion" },
+    { "id": "l4-v25", "traditional": "了", "pinyin": "le", "german": "particle (change of state)", "pos": "Partikel" },
+    { "id": "l4-v26", "traditional": "蛋糕", "pinyin": "dàngāo", "german": "cake", "pos": "Nomen" },
+    { "id": "l4-v27", "traditional": "包子", "pinyin": "bāozi", "german": "steamed bun (filled)", "pos": "Nomen" },
+    { "id": "l4-v28", "traditional": "老闆", "pinyin": "lǎobǎn", "german": "boss / shop owner", "pos": "Nomen" },
+    { "id": "l4-v29", "traditional": "媽媽", "pinyin": "māma", "german": "mom / mother", "pos": "Nomen" },
+    { "id": "l4-v30", "traditional": "國家", "pinyin": "guójiā", "german": "country / nation", "pos": "Nomen" },
+    { "id": "l4-v31", "traditional": "語言中心", "pinyin": "yǔyán zhōngxīn", "german": "language center", "pos": "Nomen" },
+    { "id": "l4-v32", "traditional": "秤", "pinyin": "chèng", "german": "scale", "pos": "Nomen" },
+    { "id": "l4-v33", "traditional": "外帶", "pinyin": "wài dài", "german": "to go (takeout)", "pos": "Nomen" },
+    { "id": "l4-v34", "traditional": "誰", "pinyin": "shéi", "german": "who", "pos": "Fragewort" },
+    { "id": "l4-v35", "traditional": "好啊", "pinyin": "hǎo a", "german": "okay! / sure!", "pos": "Antwort" },
+    { "id": "l4-v36", "traditional": "太客氣", "pinyin": "tài kèqì", "german": "too polite", "pos": "Ausdruck" },
+    { "id": "l4-v37", "traditional": "太好了", "pinyin": "tài hǎo le", "german": "Great! / Wonderful! / Excellent!", "pos": "Ausdruck", "searchTerms": ["tai le", "tai hao le", "taihaole", "太好了", "super", "toll", "great", "excellent", "prima"] },
+    { "id": "l4-v38", "traditional": "雞肉飯加蛋", "pinyin": "jīròu fàn jiā dàn", "german": "chicken rice with egg", "pos": "Phrase", "searchTerms": ["hühnchen reis mit ei", "haehnchen reis mit ei", "huhn reis mit ei", "hühnchenreis mit ei", "chicken rice egg", "ji rou fan jia dan"] },
+    { "id": "l4-v39", "traditional": "雞肉飯", "pinyin": "jīròu fàn", "german": "chicken rice", "pos": "Nomen", "searchTerms": ["hühnchen reis", "haehnchen reis", "huhn reis", "chicken rice"] },
+    { "id": "l4-v40", "traditional": "雞蛋", "pinyin": "jīdàn", "german": "egg", "pos": "Nomen", "searchTerms": ["ei", "hühnerei", "egg"] }
   ],
   "grammar": [
     {
       "id": "l4-g1",
-      "title": { "zh": "量詞：塊、杯、支", "de": "Zählwörter für Geld und Dinge" },
+      "title": { "zh": "量詞：塊、杯、支", "de": "Measure words for money and things" },
       "pattern": "Zahl + Zählwort + Nomen",
-      "explanationDe": "塊 für Geld, 杯 für Getränke, 支 für Handys/Stifte. Struktur: Zahl + Zählwort + Nomen.",
+      "explanationDe": "塊 for money, 杯 for drinks, 支 for cell phones/pens. Structure: number + measure word + noun.",
       "examples": [
-        { "zh": "八十塊錢", "pinyin": "Bāshí kuài qián", "de": "achtzig Dollar" },
-        { "zh": "兩杯咖啡", "pinyin": "Liǎng bēi kāfēi", "de": "zwei Tassen Kaffee" },
-        { "zh": "這支手機", "pinyin": "Zhè zhī shǒujī", "de": "dieses Handy" }
+        { "zh": "八十塊錢", "pinyin": "Bāshí kuài qián", "de": "eighty NT dollars" },
+        { "zh": "兩杯咖啡", "pinyin": "Liǎng bēi kāfēi", "de": "two cups of coffee" },
+        { "zh": "這支手機", "pinyin": "Zhè zhī shǒujī", "de": "this cell phone" }
       ],
       "exercises": [
         {
           "id": "l4-g1-e1",
           "type": "fill-blank",
-          "promptDe": "Zählwort für Kaffee (Tasse):",
+          "promptDe": "Measure word for coffee (cup):",
           "sentenceBefore": "一",
           "sentenceAfter": "咖啡",
           "correctAnswer": "杯"
@@ -203,7 +203,7 @@
         {
           "id": "l4-g1-e2",
           "type": "fill-blank",
-          "promptDe": "Zählwort für Geld:",
+          "promptDe": "Measure word for money:",
           "sentenceBefore": "八十",
           "sentenceAfter": "錢",
           "correctAnswer": "塊"
@@ -211,7 +211,7 @@
         {
           "id": "l4-g1-e3",
           "type": "fill-blank",
-          "promptDe": "Zählwort für Handy:",
+          "promptDe": "Measure word for cell phone:",
           "sentenceBefore": "這",
           "sentenceAfter": "手機",
           "correctAnswer": "支"
@@ -220,18 +220,18 @@
     },
     {
       "id": "l4-g2",
-      "title": { "zh": "幫 — für jemanden", "de": "幫 für „für jemanden tun“" },
+      "title": { "zh": "幫 — für jemanden", "de": "幫 for \"do something for someone\"" },
       "pattern": "幫 + Person + Verb-Phrase",
-      "explanationDe": "幫 zeigt an, dass man etwas für jemanden tut. 不 steht vor 幫.",
+      "explanationDe": "幫 indicates doing something for someone. 不 comes before 幫.",
       "examples": [
-        { "zh": "請幫我包起來。", "pinyin": "Qǐng bāng wǒ bāo qǐlái.", "de": "Bitte verpacken Sie es für mich." },
-        { "zh": "他不幫我買咖啡。", "pinyin": "Tā bù bāng wǒ mǎi kāfēi.", "de": "Er kauft keinen Kaffee für mich." }
+        { "zh": "請幫我包起來。", "pinyin": "Qǐng bāng wǒ bāo qǐlái.", "de": "Please wrap it up for me." },
+        { "zh": "他不幫我買咖啡。", "pinyin": "Tā bù bāng wǒ mǎi kāfēi.", "de": "He doesn't buy coffee for me." }
       ],
       "exercises": [
         {
           "id": "l4-g2-e1",
           "type": "fill-blank",
-          "promptDe": "Ergänze „für mich“:",
+          "promptDe": "Add \"for me\":",
           "sentenceBefore": "請",
           "sentenceAfter": "我包起來。",
           "correctAnswer": "幫"
@@ -239,7 +239,7 @@
         {
           "id": "l4-g2-e2",
           "type": "fill-blank",
-          "promptDe": "Verneinung (不 vor 幫):",
+          "promptDe": "Negation (不 before 幫):",
           "sentenceBefore": "他不",
           "sentenceAfter": "我買咖啡。",
           "correctAnswer": "幫"
@@ -248,18 +248,18 @@
     },
     {
       "id": "l4-g3",
-      "title": { "zh": "能 / 不能", "de": "Fähigkeit mit 能" },
+      "title": { "zh": "能 / 不能", "de": "Ability with 能" },
       "pattern": "Subjekt + 能/不能 + Verb",
-      "explanationDe": "能 drückt Fähigkeit aus. Verneinung: 不能.",
+      "explanationDe": "能 expresses ability. Negation: 不能.",
       "examples": [
-        { "zh": "新手機能上網。", "pinyin": "Xīn shǒujī néng shàngwǎng.", "de": "Das neue Handy kann ins Internet." },
-        { "zh": "我的手機不能照相。", "pinyin": "Wǒ de shǒujī bù néng zhàoxiàng.", "de": "Mein Handy kann keine Fotos machen." }
+        { "zh": "新手機能上網。", "pinyin": "Xīn shǒujī néng shàngwǎng.", "de": "The new phone can go online." },
+        { "zh": "我的手機不能照相。", "pinyin": "Wǒ de shǒujī bù néng zhàoxiàng.", "de": "My phone can't take photos." }
       ],
       "exercises": [
         {
           "id": "l4-g3-e1",
           "type": "fill-blank",
-          "promptDe": "Ergänze „können“:",
+          "promptDe": "Add \"can\":",
           "sentenceBefore": "新手機",
           "sentenceAfter": "上網。",
           "correctAnswer": "能"
@@ -267,7 +267,7 @@
         {
           "id": "l4-g3-e2",
           "type": "fill-blank",
-          "promptDe": "Verneinung:",
+          "promptDe": "Negation:",
           "sentenceBefore": "我的手機不",
           "sentenceAfter": "照相。",
           "correctAnswer": "能"
@@ -276,18 +276,18 @@
     },
     {
       "id": "l4-g4",
-      "title": { "zh": "的 — Nomen weglassen", "de": "的 mit weggelassenem Nomen" },
+      "title": { "zh": "的 — Nomen weglassen", "de": "的 with omitted noun" },
       "pattern": "Adjektiv + 的",
-      "explanationDe": "Wenn das Nomen klar ist, kann es nach 的 weggelassen werden: 我要新的 = Ich nehme das neue.",
+      "explanationDe": "When the noun is clear from context, it can be omitted after 的: 我要新的 = I'll take the new one.",
       "examples": [
-        { "zh": "我要新的。", "pinyin": "Wǒ yào xīn de.", "de": "Ich nehme das neue." },
-        { "zh": "不要舊的。", "pinyin": "Bú yào jiù de.", "de": "Ich will nicht das alte." }
+        { "zh": "我要新的。", "pinyin": "Wǒ yào xīn de.", "de": "I'll take the new one." },
+        { "zh": "不要舊的。", "pinyin": "Bú yào jiù de.", "de": "I don't want the old one." }
       ],
       "exercises": [
         {
           "id": "l4-g4-e1",
           "type": "fill-blank",
-          "promptDe": "Ergänze die Partikel:",
+          "promptDe": "Add the particle:",
           "sentenceBefore": "我要新",
           "sentenceAfter": "。",
           "correctAnswer": "的"
@@ -295,7 +295,7 @@
         {
           "id": "l4-g4-e2",
           "type": "fill-blank",
-          "promptDe": "Ergänze:",
+          "promptDe": "Complete:",
           "sentenceBefore": "不要舊",
           "sentenceAfter": "。",
           "correctAnswer": "的"

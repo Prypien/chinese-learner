@@ -39,17 +39,17 @@ export function VocabPractice({ vocabulary, title }: VocabPracticeProps) {
 
       {mode === "help" && (
         <p className="mb-4 text-sm text-zinc-500">
-          Zeichen und Umriss werden angezeigt.
+          Character and outline are shown.
         </p>
       )}
       {mode === "no-outline" && (
         <p className="mb-4 text-sm text-zinc-500">
-          Zeichen sichtbar, aber ohne Umriss-Hilfe.
+          Character visible, but no outline guide.
         </p>
       )}
       {mode === "memory" && (
         <p className="mb-4 text-sm text-zinc-500">
-          Nur Pinyin — zeichne die Zeichen aus dem Kopf.
+          Pinyin only — draw the characters from memory.
         </p>
       )}
 

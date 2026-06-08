@@ -1,0 +1,76 @@
+{
+  "title": {
+    "zh": "我的介紹",
+    "pinyin": "Wǒ de jièshào",
+    "de": "Jens's Self-Introduction"
+  },
+  "lines": [
+    { "zh": "你好！", "pinyin": "Nǐ hǎo!", "de": "Hello!" },
+    {
+      "zh": "我叫朴若瑟。",
+      "pinyin": "Wǒ jiào Piǔ Ruòsè.",
+      "de": "My name is 朴若瑟."
+    },
+    {
+      "zh": "我的家人叫我 Jen。",
+      "pinyin": "Wǒ de jiārén jiào wǒ Jen.",
+      "de": "My family calls me Jen."
+    },
+    {
+      "zh": "我有一個哥哥，我的哥哥喜歡打網球。",
+      "pinyin": "Wǒ yǒu yīgè gēge, wǒ de gēge xǐhuān dǎ wǎngqiú.",
+      "de": "I have an older brother; my brother likes to play tennis."
+    },
+    {
+      "zh": "我喜歡臺灣人，因為他們很好。",
+      "pinyin": "Wǒ xǐhuān Táiwān rén, yīnwèi tāmen hěn hǎo.",
+      "de": "I like Taiwanese people because they are very nice."
+    },
+    {
+      "zh": "我愛吃雞肉飯。",
+      "pinyin": "Wǒ ài chī jīròu fàn.",
+      "de": "I love eating chicken rice."
+    },
+    {
+      "zh": "我愛喝咖啡。",
+      "pinyin": "Wǒ ài hē kāfēi.",
+      "de": "I love drinking coffee."
+    },
+    {
+      "zh": "我常去健身房。",
+      "pinyin": "Wǒ cháng qù jiànshēnfáng.",
+      "de": "I often go to the gym."
+    }
+  ],
+  "vocabulary": [
+    { "id": "jt-v01", "traditional": "你好", "pinyin": "nǐ hǎo", "german": "hello", "pos": "Phrase" },
+    { "id": "jt-v02", "traditional": "我", "pinyin": "wǒ", "german": "I", "pos": "Pronomen" },
+    { "id": "jt-v03", "traditional": "叫", "pinyin": "jiào", "german": "to be called", "pos": "Verb" },
+    { "id": "jt-v04", "traditional": "朴", "pinyin": "Piǔ", "german": "Park (surname)", "pos": "Name" },
+    { "id": "jt-v05", "traditional": "若", "pinyin": "Ruò", "german": "Ruò (name)", "pos": "Name" },
+    { "id": "jt-v06", "traditional": "瑟", "pinyin": "Sè", "german": "Sè (name)", "pos": "Name" },
+    { "id": "jt-v07", "traditional": "的", "pinyin": "de", "german": "possessive (…的)", "pos": "Partikel" },
+    { "id": "jt-v08", "traditional": "家人", "pinyin": "jiārén", "german": "family", "pos": "Nomen" },
+    { "id": "jt-v09", "traditional": "人", "pinyin": "rén", "german": "person / people", "pos": "Nomen" },
+    { "id": "jt-v10", "traditional": "有", "pinyin": "yǒu", "german": "to have", "pos": "Verb" },
+    { "id": "jt-v11", "traditional": "一", "pinyin": "yī", "german": "one", "pos": "Zahl" },
+    { "id": "jt-v12", "traditional": "個", "pinyin": "gè", "german": "measure word", "pos": "Partikel" },
+    { "id": "jt-v13", "traditional": "哥哥", "pinyin": "gēge", "german": "older brother", "pos": "Nomen" },
+    { "id": "jt-v14", "traditional": "喜歡", "pinyin": "xǐhuān", "german": "to like", "pos": "Verb" },
+    { "id": "jt-v15", "traditional": "打網球", "pinyin": "dǎ wǎngqiú", "german": "to play tennis", "pos": "Phrase" },
+    { "id": "jt-v16", "traditional": "臺灣", "pinyin": "Táiwān", "german": "Taiwan", "pos": "Nomen" },
+    { "id": "jt-v17", "traditional": "臺灣人", "pinyin": "Táiwān rén", "german": "Taiwanese person / people", "pos": "Nomen" },
+    { "id": "jt-v18", "traditional": "因為", "pinyin": "yīnwèi", "german": "because", "pos": "Konjunktion" },
+    { "id": "jt-v19", "traditional": "他們", "pinyin": "tāmen", "german": "they", "pos": "Pronomen" },
+    { "id": "jt-v20", "traditional": "很", "pinyin": "hěn", "german": "very", "pos": "Adverb" },
+    { "id": "jt-v21", "traditional": "好", "pinyin": "hǎo", "german": "good", "pos": "Adjektiv" },
+    { "id": "jt-v22", "traditional": "愛", "pinyin": "ài", "german": "to love / to really like", "pos": "Verb" },
+    { "id": "jt-v23", "traditional": "吃", "pinyin": "chī", "german": "to eat", "pos": "Verb" },
+    { "id": "jt-v24", "traditional": "雞肉飯", "pinyin": "jīròu fàn", "german": "chicken rice", "pos": "Nomen" },
+    { "id": "jt-v25", "traditional": "喝", "pinyin": "hē", "german": "to drink", "pos": "Verb" },
+    { "id": "jt-v26", "traditional": "咖啡", "pinyin": "kāfēi", "german": "coffee", "pos": "Nomen" },
+    { "id": "jt-v27", "traditional": "常", "pinyin": "cháng", "german": "often", "pos": "Adverb" },
+    { "id": "jt-v28", "traditional": "去", "pinyin": "qù", "german": "to go", "pos": "Verb" },
+    { "id": "jt-v29", "traditional": "健身房", "pinyin": "jiànshēnfáng", "german": "gym / fitness center", "pos": "Nomen" }
+  ]
+}

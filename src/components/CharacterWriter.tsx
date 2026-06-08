@@ -81,7 +81,7 @@ export function CharacterWriter({
     <div
       ref={containerRef}
       className="touch-none select-none [-webkit-touch-callout:none] [&_svg]:mx-auto"
-      aria-label={`Zeichne ${character}`}
+      aria-label={`Draw ${character}`}
     />
   );
 }

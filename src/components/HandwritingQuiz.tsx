@@ -10,9 +10,9 @@ import { CharacterWriter } from "./CharacterWriter";
 export type HandwritingMode = "help" | "no-outline" | "memory";
 
 export const HANDWRITING_MODE_LABELS: Record<HandwritingMode, string> = {
-  help: "Mit Hilfe",
-  "no-outline": "Ohne Umriss",
-  memory: "Aus dem Kopf",
+  help: "With help",
+  "no-outline": "No outline",
+  memory: "From memory",
 };
 
 function shuffle<T>(items: T[]): T[] {
@@ -109,19 +109,17 @@ export function HandwritingQuiz({
   };
 
   if (!vocabulary.length) {
-    return (
-      <p className="text-zinc-500">Keine Vokabeln ausgewählt.</p>
-    );
+    return <p className="text-zinc-500">No vocabulary selected.</p>;
   }
 
   if (finished) {
     return (
       <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-8 text-center dark:border-emerald-900 dark:bg-emerald-950/30">
         <p className="text-2xl font-semibold text-emerald-800 dark:text-emerald-200">
-          Geschafft!
+          Done!
         </p>
         <p className="mt-2 text-lg text-emerald-700 dark:text-emerald-300">
-          {score} von {queue.length} Wörtern
+          {score} of {queue.length} words
         </p>
         {!onComplete && (
           <button
@@ -135,7 +133,7 @@ export function HandwritingQuiz({
             }}
             className="mt-6 rounded-xl bg-emerald-600 px-6 py-3 font-medium text-white hover:bg-emerald-700"
           >
-            Nochmal üben
+            Practice again
           </button>
         )}
       </div>
@@ -159,20 +157,20 @@ export function HandwritingQuiz({
 
       <div className="mb-2 flex items-center justify-between text-sm text-zinc-500">
         <span>
-          Wort {index + 1} / {queue.length}
+          Word {index + 1} / {queue.length}
           {characters.length > 1 && (
             <>
               {" "}
-              · Zeichen {Math.min(charIndex + 1, characters.length)} /{" "}
+              · Character {Math.min(charIndex + 1, characters.length)} /{" "}
               {characters.length}
             </>
           )}
         </span>
-        <span>Richtig: {score}</span>
+        <span>Correct: {score}</span>
       </div>
 
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-        <p className="text-sm uppercase tracking-wide text-zinc-400">Deutsch</p>
+        <p className="text-sm uppercase tracking-wide text-zinc-400">English</p>
         <p className="mt-1 text-2xl font-medium text-zinc-900 dark:text-zinc-100">
           {current.german}
         </p>
@@ -184,7 +182,7 @@ export function HandwritingQuiz({
           {!allCharsDone && !charLoadError && (
             <>
               <p className="mb-2 text-sm text-zinc-400">
-                Zeichne:{" "}
+                Draw:{" "}
                 {showCharacter ? (
                   <span className="font-chinese text-2xl text-red-600">
                     {charHint}
@@ -218,7 +216,7 @@ export function HandwritingQuiz({
                 onClick={advanceWord}
                 className="mt-4 rounded-xl bg-red-600 px-8 py-3 font-medium text-white hover:bg-red-700"
               >
-                Weiter
+                Continue
               </button>
             </div>
           )}
@@ -226,7 +224,7 @@ export function HandwritingQuiz({
           {charLoadError && (
             <div className="py-6 text-center">
               <p className="text-sm text-amber-700 dark:text-amber-300">
-                Strichdaten für „{currentChar}“ nicht verfügbar.
+                Stroke data for &ldquo;{currentChar}&rdquo; is not available.
               </p>
               <div className="mt-4 flex justify-center gap-3">
                 <button
@@ -234,14 +232,14 @@ export function HandwritingQuiz({
                   onClick={handleSkipChar}
                   className="rounded-lg border border-zinc-300 px-4 py-2 text-sm dark:border-zinc-600"
                 >
-                  Überspringen
+                  Skip
                 </button>
                 <button
                   type="button"
                   onClick={handleReveal}
                   className="rounded-lg bg-red-600 px-4 py-2 text-sm text-white"
                 >
-                  Lösung zeigen
+                  Show answer
                 </button>
               </div>
             </div>
@@ -279,7 +277,7 @@ export function HandwritingQuiz({
             onClick={handleSkipChar}
             className="text-sm text-zinc-400 hover:text-zinc-600"
           >
-            Wort überspringen
+            Skip word
           </button>
         </div>
       </div>

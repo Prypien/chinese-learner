@@ -16,7 +16,7 @@ const notoSansTC = Noto_Sans_TC({
 export const metadata: Metadata = {
   title: "Chinese Learner — 當代中文課程 L1–L4",
   description:
-    "Zeichen schreiben üben für 當代中文課程 Band 1, Lektionen 1–4.",
+    "Handwriting practice for A Course in Contemporary Chinese Book 1, Lessons 1–4.",
   appleWebApp: {
     capable: true,
     title: "Chinese Learner",
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="de"
+      lang="en"
       className={`${geist.variable} ${notoSansTC.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-zinc-50 font-sans text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">

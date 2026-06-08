@@ -3,13 +3,13 @@
   "title": {
     "zh": "我的家人",
     "pinyin": "Wǒ de jiārén",
-    "de": "Meine Familie"
+    "de": "My Family"
   },
   "objectives": [
-    "Familienmitglieder benennen",
-    "Besitz mit 的 ausdrücken",
-    "有/沒有 für Haben/Nicht-haben verwenden",
-    "Zählwörter 個 und 張 kennen"
+    "Name family members",
+    "Express possession with 的",
+    "Use 有/沒有 for having / not having",
+    "Learn the measure words 個 and 張"
   ],
   "dialogues": [
     {
@@ -17,51 +17,51 @@
       "title": {
         "zh": "對話一",
         "pinyin": "Duìhuà yī",
-        "de": "Dialog I — Meine Familie"
+        "de": "Dialog I — My Family"
       },
       "lines": [
         {
           "speaker": "張怡君",
           "zh": "開文，你有兄弟姐妹嗎？",
           "pinyin": "Kāiwén, nǐ yǒu xiōngdì jiěmèi ma?",
-          "de": "Kaiwen, hast du Geschwister?"
+          "de": "Kaiwen, do you have siblings?"
         },
         {
           "speaker": "王開文",
           "zh": "有，我有一個哥哥，兩個妹妹。",
           "pinyin": "Yǒu, wǒ yǒu yí ge gēge, liǎng ge mèimei.",
-          "de": "Ja, ich habe einen älteren Bruder und zwei jüngere Schwestern."
+          "de": "Yes, I have one older brother and two younger sisters."
         },
         {
           "speaker": "張怡君",
           "zh": "你的家人都在美國嗎？",
           "pinyin": "Nǐ de jiārén dōu zài Měiguó ma?",
-          "de": "Ist deine ganze Familie in den USA?"
+          "de": "Is your whole family in the USA?"
         },
         {
           "speaker": "王開文",
           "zh": "不是，我哥哥在美國，妹妹在臺灣。",
           "pinyin": "Bú shì, wǒ gēge zài Měiguó, mèimei zài Táiwān.",
-          "de": "Nein, mein Bruder ist in den USA, meine Schwestern sind in Taiwan."
+          "de": "No, my brother is in the USA; my sisters are in Taiwan."
         }
       ],
       "comprehensionQuestions": [
         {
           "id": "l2-d1-q1",
-          "questionDe": "Hat 王開文 Geschwister?",
+          "questionDe": "Does 王開文 have siblings?",
           "answerType": "yesno",
           "correctAnswer": "ja"
         },
         {
           "id": "l2-d1-q2",
-          "questionDe": "Wie viele Schwestern hat 王開文?",
+          "questionDe": "How many sisters does 王開文 have?",
           "answerType": "text",
           "correctAnswer": "兩個",
           "acceptableAnswers": ["2", "zwei", "兩個", " zwei"]
         },
         {
           "id": "l2-d1-q3",
-          "questionDe": "Wo ist sein Bruder?",
+          "questionDe": "Where is his brother?",
           "answerType": "text",
           "correctAnswer": "美國",
           "acceptableAnswers": ["amerika", "usa", "美國"]
@@ -73,57 +73,57 @@
       "title": {
         "zh": "對話二",
         "pinyin": "Duìhuà èr",
-        "de": "Dialog II — Telefonat"
+        "de": "Dialog II — Phone Call"
       },
       "lines": [
         {
           "speaker": "王開文",
           "zh": "喂，請問你是李小姐嗎？",
           "pinyin": "Wéi, qǐngwèn nǐ shì Lǐ xiǎojiě ma?",
-          "de": "Hallo, sind Sie Fräulein Li?"
+          "de": "Hello, are you Miss Li?"
         },
         {
           "speaker": "李明華",
           "zh": "是的，我是李明華。",
           "pinyin": "Shì de, wǒ shì Lǐ Mínghuá.",
-          "de": "Ja, ich bin Li Minghua."
+          "de": "Yes, I am Li Minghua."
         },
         {
           "speaker": "王開文",
           "zh": "我有很多照片，你要不要看？",
           "pinyin": "Wǒ yǒu hěn duō zhàopiàn, nǐ yào bu yào kàn?",
-          "de": "Ich habe viele Fotos, möchtest du sie sehen?"
+          "de": "I have a lot of photos — would you like to see them?"
         },
         {
           "speaker": "李明華",
           "zh": "好啊！你的照片好看嗎？",
           "pinyin": "Hǎo a! Nǐ de zhàopiàn hǎokàn ma?",
-          "de": "Gerne! Sind deine Fotos schön?"
+          "de": "Sure! Are your photos nice?"
         },
         {
           "speaker": "王開文",
           "zh": "很好看！",
           "pinyin": "Hěn hǎokàn!",
-          "de": "Sehr schön!"
+          "de": "Very nice!"
         }
       ],
       "comprehensionQuestions": [
         {
           "id": "l2-d2-q1",
-          "questionDe": "Mit wem telefoniert 王開文?",
+          "questionDe": "Who is 王開文 talking to on the phone?",
           "answerType": "text",
           "correctAnswer": "李明華",
           "acceptableAnswers": ["李明華", "li minghua", "李小姐"]
         },
         {
           "id": "l2-d2-q2",
-          "questionDe": "Hat 王開文 Fotos?",
+          "questionDe": "Does 王開文 have photos?",
           "answerType": "yesno",
           "correctAnswer": "ja"
         },
         {
           "id": "l2-d2-q3",
-          "questionDe": "Wie sind die Fotos?",
+          "questionDe": "How are the photos?",
           "answerType": "text",
           "correctAnswer": "很好看",
           "acceptableAnswers": ["很好看", "schön", "sehr schön", "gut"]
@@ -132,58 +132,58 @@
     }
   ],
   "vocabulary": [
-    { "id": "l2-v01", "traditional": "的", "pinyin": "de", "german": "Besitzpartikel (von)", "pos": "Partikel" },
-    { "id": "l2-v02", "traditional": "有", "pinyin": "yǒu", "german": "haben", "pos": "Verb" },
-    { "id": "l2-v03", "traditional": "沒有", "pinyin": "méiyǒu", "german": "nicht haben", "pos": "Verb" },
-    { "id": "l2-v04", "traditional": "都", "pinyin": "dōu", "german": "alle / beide", "pos": "Adverb" },
-    { "id": "l2-v05", "traditional": "家人", "pinyin": "jiārén", "german": "Familienmitglieder", "pos": "Nomen" },
-    { "id": "l2-v06", "traditional": "名字", "pinyin": "míngzi", "german": "Name", "pos": "Nomen" },
-    { "id": "l2-v07", "traditional": "書", "pinyin": "shū", "german": "Buch", "pos": "Nomen" },
-    { "id": "l2-v08", "traditional": "妹妹", "pinyin": "mèimei", "german": "jüngere Schwester", "pos": "Nomen" },
-    { "id": "l2-v09", "traditional": "姐妹", "pinyin": "jiěmèi", "german": "Schwestern", "pos": "Nomen" },
-    { "id": "l2-v10", "traditional": "好看", "pinyin": "hǎokàn", "german": "schön / gut aussehend", "pos": "Adjektiv" },
-    { "id": "l2-v11", "traditional": "可以", "pinyin": "kěyǐ", "german": "dürfen / können", "pos": "Verb" },
-    { "id": "l2-v12", "traditional": "今天", "pinyin": "jīntiān", "german": "heute", "pos": "Nomen" },
-    { "id": "l2-v13", "traditional": "從", "pinyin": "cóng", "german": "von / aus", "pos": "Präposition" },
-    { "id": "l2-v14", "traditional": "坐", "pinyin": "zuò", "german": "sitzen / fahren (Transport)", "pos": "Verb" },
-    { "id": "l2-v15", "traditional": "高鐵", "pinyin": "gāotiě", "german": "Hochgeschwindigkeitszug", "pos": "Nomen" },
-    { "id": "l2-v16", "traditional": "小時", "pinyin": "xiǎoshí", "german": "Stunde", "pos": "Nomen" },
-    { "id": "l2-v17", "traditional": "天", "pinyin": "tiān", "german": "Tag / Zählwort für Tage", "pos": "Nomen" },
-    { "id": "l2-v18", "traditional": "幾", "pinyin": "jǐ", "german": "wie viele", "pos": "Fragewort" },
-    { "id": "l2-v19", "traditional": "哪國", "pinyin": "nǎ guó", "german": "welches Land", "pos": "Fragewort" },
-    { "id": "l2-v20", "traditional": "您", "pinyin": "nín", "german": "Sie (höflich)", "pos": "Pronomen" },
-    { "id": "l2-v21", "traditional": "喂", "pinyin": "wéi", "german": "hallo (am Telefon)", "pos": "Interjektion" },
-    { "id": "l2-v22", "traditional": "打電話", "pinyin": "dǎ diànhuà", "german": "telefonieren", "pos": "Verb" },
-    { "id": "l2-v23", "traditional": "看書", "pinyin": "kàn shū", "german": "lesen / Bücher lesen", "pos": "Verb" },
-    { "id": "l2-v24", "traditional": "照相", "pinyin": "zhàoxiàng", "german": "Fotos machen", "pos": "Verb" },
-    { "id": "l2-v25", "traditional": "洗手間", "pinyin": "xǐshǒujiān", "german": "Toilette", "pos": "Nomen" },
-    { "id": "l2-v26", "traditional": "伯母", "pinyin": "bómǔ", "german": "Tante (Mutter des Freundes)", "pos": "Nomen" },
-    { "id": "l2-v27", "traditional": "因為", "pinyin": "yīnwèi", "german": "weil", "pos": "Konjunktion" },
-    { "id": "l2-v28", "traditional": "可是", "pinyin": "kěshì", "german": "aber / jedoch", "pos": "Konjunktion" },
-    { "id": "l2-v29", "traditional": "比較", "pinyin": "bǐjiào", "german": "vergleichsweise / eher", "pos": "Adverb" },
-    { "id": "l2-v30", "traditional": "舊", "pinyin": "jiù", "german": "alt", "pos": "Adjektiv" },
-    { "id": "l2-v31", "traditional": "好的", "pinyin": "hǎo de", "german": "okay / in Ordnung", "pos": "Antwort" },
-    { "id": "l2-v32", "traditional": "可憐", "pinyin": "kělián", "german": "bemitleidenswert", "pos": "Adjektiv" },
-    { "id": "l2-v33", "traditional": "試", "pinyin": "shì", "german": "probieren", "pos": "Verb" },
-    { "id": "l2-v34", "traditional": "傳統", "pinyin": "chuántǒng", "german": "Tradition", "pos": "Nomen" },
-    { "id": "l2-v35", "traditional": "張怡君", "pinyin": "Zhāng Yíjūn", "german": "Zhang Yijun (Name)", "pos": "Eigenname" }
+    { "id": "l2-v01", "traditional": "的", "pinyin": "de", "german": "possessive particle (of)", "pos": "Partikel" },
+    { "id": "l2-v02", "traditional": "有", "pinyin": "yǒu", "german": "to have", "pos": "Verb" },
+    { "id": "l2-v03", "traditional": "沒有", "pinyin": "méiyǒu", "german": "to not have", "pos": "Verb" },
+    { "id": "l2-v04", "traditional": "都", "pinyin": "dōu", "german": "all / both", "pos": "Adverb" },
+    { "id": "l2-v05", "traditional": "家人", "pinyin": "jiārén", "german": "family members", "pos": "Nomen" },
+    { "id": "l2-v06", "traditional": "名字", "pinyin": "míngzi", "german": "name", "pos": "Nomen" },
+    { "id": "l2-v07", "traditional": "書", "pinyin": "shū", "german": "book", "pos": "Nomen" },
+    { "id": "l2-v08", "traditional": "妹妹", "pinyin": "mèimei", "german": "younger sister", "pos": "Nomen" },
+    { "id": "l2-v09", "traditional": "姐妹", "pinyin": "jiěmèi", "german": "sisters", "pos": "Nomen" },
+    { "id": "l2-v10", "traditional": "好看", "pinyin": "hǎokàn", "german": "good-looking / nice", "pos": "Adjektiv" },
+    { "id": "l2-v11", "traditional": "可以", "pinyin": "kěyǐ", "german": "may / can", "pos": "Verb" },
+    { "id": "l2-v12", "traditional": "今天", "pinyin": "jīntiān", "german": "today", "pos": "Nomen" },
+    { "id": "l2-v13", "traditional": "從", "pinyin": "cóng", "german": "from", "pos": "Präposition" },
+    { "id": "l2-v14", "traditional": "坐", "pinyin": "zuò", "german": "to sit / to ride (transport)", "pos": "Verb" },
+    { "id": "l2-v15", "traditional": "高鐵", "pinyin": "gāotiě", "german": "high-speed train", "pos": "Nomen" },
+    { "id": "l2-v16", "traditional": "小時", "pinyin": "xiǎoshí", "german": "hour", "pos": "Nomen" },
+    { "id": "l2-v17", "traditional": "天", "pinyin": "tiān", "german": "day / measure word for days", "pos": "Nomen" },
+    { "id": "l2-v18", "traditional": "幾", "pinyin": "jǐ", "german": "how many", "pos": "Fragewort" },
+    { "id": "l2-v19", "traditional": "哪國", "pinyin": "nǎ guó", "german": "which country", "pos": "Fragewort" },
+    { "id": "l2-v20", "traditional": "您", "pinyin": "nín", "german": "you (polite)", "pos": "Pronomen" },
+    { "id": "l2-v21", "traditional": "喂", "pinyin": "wéi", "german": "hello (on the phone)", "pos": "Interjektion" },
+    { "id": "l2-v22", "traditional": "打電話", "pinyin": "dǎ diànhuà", "german": "to make a phone call", "pos": "Verb" },
+    { "id": "l2-v23", "traditional": "看書", "pinyin": "kàn shū", "german": "to read / to read books", "pos": "Verb" },
+    { "id": "l2-v24", "traditional": "照相", "pinyin": "zhàoxiàng", "german": "to take photos", "pos": "Verb" },
+    { "id": "l2-v25", "traditional": "洗手間", "pinyin": "xǐshǒujiān", "german": "restroom", "pos": "Nomen" },
+    { "id": "l2-v26", "traditional": "伯母", "pinyin": "bómǔ", "german": "aunt (friend's mother)", "pos": "Nomen" },
+    { "id": "l2-v27", "traditional": "因為", "pinyin": "yīnwèi", "german": "because", "pos": "Konjunktion" },
+    { "id": "l2-v28", "traditional": "可是", "pinyin": "kěshì", "german": "but / however", "pos": "Konjunktion" },
+    { "id": "l2-v29", "traditional": "比較", "pinyin": "bǐjiào", "german": "relatively / rather", "pos": "Adverb" },
+    { "id": "l2-v30", "traditional": "舊", "pinyin": "jiù", "german": "old", "pos": "Adjektiv" },
+    { "id": "l2-v31", "traditional": "好的", "pinyin": "hǎo de", "german": "okay / all right", "pos": "Antwort" },
+    { "id": "l2-v32", "traditional": "可憐", "pinyin": "kělián", "german": "pitiful", "pos": "Adjektiv" },
+    { "id": "l2-v33", "traditional": "試", "pinyin": "shì", "german": "to try", "pos": "Verb" },
+    { "id": "l2-v34", "traditional": "傳統", "pinyin": "chuántǒng", "german": "tradition", "pos": "Nomen" },
+    { "id": "l2-v35", "traditional": "張怡君", "pinyin": "Zhāng Yíjūn", "german": "Zhang Yijun (name)", "pos": "Eigenname" }
   ],
   "grammar": [
     {
       "id": "l2-g1",
-      "title": { "zh": "的 — Besitz", "de": "Besitz mit 的" },
+      "title": { "zh": "的 — Besitz", "de": "Possession with 的" },
       "pattern": "Besitzer + 的 + Nomen",
-      "explanationDe": "的 verbindet Besitzer und Besitz. Beispiel: 我的書 = mein Buch.",
+      "explanationDe": "的 connects owner and possession. Example: 我的書 = my book.",
       "examples": [
-        { "zh": "我的書", "pinyin": "Wǒ de shū", "de": "mein Buch" },
-        { "zh": "你的家人", "pinyin": "Nǐ de jiārén", "de": "deine Familie" },
-        { "zh": "李老師的名字", "pinyin": "Lǐ lǎoshī de míngzi", "de": "der Name von Lehrer Li" }
+        { "zh": "我的書", "pinyin": "Wǒ de shū", "de": "my book" },
+        { "zh": "你的家人", "pinyin": "Nǐ de jiārén", "de": "your family" },
+        { "zh": "李老師的名字", "pinyin": "Lǐ lǎoshī de míngzi", "de": "Teacher Li's name" }
       ],
       "exercises": [
         {
           "id": "l2-g1-e1",
           "type": "fill-blank",
-          "promptDe": "Ergänze die Besitzpartikel:",
+          "promptDe": "Add the possessive particle:",
           "sentenceBefore": "我",
           "sentenceAfter": "書",
           "correctAnswer": "的"
@@ -191,7 +191,7 @@
         {
           "id": "l2-g1-e2",
           "type": "fill-blank",
-          "promptDe": "Ergänze:",
+          "promptDe": "Complete:",
           "sentenceBefore": "你",
           "sentenceAfter": "家人",
           "correctAnswer": "的"
@@ -200,18 +200,18 @@
     },
     {
       "id": "l2-g2",
-      "title": { "zh": "有 / 沒有", "de": "Haben und Nicht-haben" },
+      "title": { "zh": "有 / 沒有", "de": "Having and not having" },
       "pattern": "Subjekt + 有/沒有 + Objekt",
-      "explanationDe": "有 bedeutet „haben“. Die Verneinung ist immer 沒有, nicht 不有.",
+      "explanationDe": "有 means \"to have.\" The negative is always 沒有, not 不有.",
       "examples": [
-        { "zh": "我有很多照片。", "pinyin": "Wǒ yǒu hěn duō zhàopiàn.", "de": "Ich habe viele Fotos." },
-        { "zh": "我沒有兄弟姐妹。", "pinyin": "Wǒ méiyǒu xiōngdì jiěmèi.", "de": "Ich habe keine Geschwister." }
+        { "zh": "我有很多照片。", "pinyin": "Wǒ yǒu hěn duō zhàopiàn.", "de": "I have a lot of photos." },
+        { "zh": "我沒有兄弟姐妹。", "pinyin": "Wǒ méiyǒu xiōngdì jiěmèi.", "de": "I don't have any siblings." }
       ],
       "exercises": [
         {
           "id": "l2-g2-e1",
           "type": "fill-blank",
-          "promptDe": "Positiv: Ich habe ein Buch.",
+          "promptDe": "Positive: I have a book.",
           "sentenceBefore": "我",
           "sentenceAfter": "書。",
           "correctAnswer": "有",
@@ -220,7 +220,7 @@
         {
           "id": "l2-g2-e2",
           "type": "fill-blank",
-          "promptDe": "Negativ: Ich habe keine Geschwister.",
+          "promptDe": "Negative: I don't have siblings.",
           "sentenceBefore": "我",
           "sentenceAfter": "兄弟姐妹。",
           "correctAnswer": "沒有"
@@ -229,18 +229,18 @@
     },
     {
       "id": "l2-g3",
-      "title": { "zh": "都 — alle", "de": "都 für „alle“" },
+      "title": { "zh": "都 — alle", "de": "都 for \"all\"" },
       "pattern": "Subjekt + 都 + Prädikat",
-      "explanationDe": "都 bedeutet „alle“ oder „beide“ und steht nach dem Subjekt, vor dem Verb.",
+      "explanationDe": "都 means \"all\" or \"both\" and comes after the subject, before the verb.",
       "examples": [
-        { "zh": "我的家人都在美國。", "pinyin": "Wǒ de jiārén dōu zài Měiguó.", "de": "Meine ganze Familie ist in den USA." },
-        { "zh": "我們都姓陳。", "pinyin": "Wǒmen dōu xìng Chén.", "de": "Wir heißen alle Chen." }
+        { "zh": "我的家人都在美國。", "pinyin": "Wǒ de jiārén dōu zài Měiguó.", "de": "My whole family is in the USA." },
+        { "zh": "我們都姓陳。", "pinyin": "Wǒmen dōu xìng Chén.", "de": "We are all surnamed Chen." }
       ],
       "exercises": [
         {
           "id": "l2-g3-e1",
           "type": "fill-blank",
-          "promptDe": "Ergänze „alle“:",
+          "promptDe": "Add \"all\":",
           "sentenceBefore": "我的家人",
           "sentenceAfter": "在美國。",
           "correctAnswer": "都"
@@ -248,7 +248,7 @@
         {
           "id": "l2-g3-e2",
           "type": "fill-blank",
-          "promptDe": "Ergänze:",
+          "promptDe": "Complete:",
           "sentenceBefore": "我們",
           "sentenceAfter": "是學生。",
           "correctAnswer": "都"
@@ -257,18 +257,18 @@
     },
     {
       "id": "l2-g4",
-      "title": { "zh": "個 / 張 — Zählwörter", "de": "Zählwörter 個 und 張" },
+      "title": { "zh": "個 / 張 — Zählwörter", "de": "Measure words 個 and 張" },
       "pattern": "Zahl + Zählwort + Nomen",
-      "explanationDe": "個 ist das allgemeine Zählwort. 張 wird für flache Dinge wie Fotos verwendet.",
+      "explanationDe": "個 is the general measure word. 張 is used for flat objects such as photos.",
       "examples": [
-        { "zh": "一個哥哥", "pinyin": "Yí ge gēge", "de": "ein älterer Bruder" },
-        { "zh": "兩張照片", "pinyin": "Liǎng zhāng zhàopiàn", "de": "zwei Fotos" }
+        { "zh": "一個哥哥", "pinyin": "Yí ge gēge", "de": "one older brother" },
+        { "zh": "兩張照片", "pinyin": "Liǎng zhāng zhàopiàn", "de": "two photos" }
       ],
       "exercises": [
         {
           "id": "l2-g4-e1",
           "type": "fill-blank",
-          "promptDe": "Zählwort für Personen:",
+          "promptDe": "Measure word for people:",
           "sentenceBefore": "一",
           "sentenceAfter": "哥哥",
           "correctAnswer": "個"
@@ -276,7 +276,7 @@
         {
           "id": "l2-g4-e2",
           "type": "fill-blank",
-          "promptDe": "Zählwort für Fotos:",
+          "promptDe": "Measure word for photos:",
           "sentenceBefore": "兩",
           "sentenceAfter": "照片",
           "correctAnswer": "張"

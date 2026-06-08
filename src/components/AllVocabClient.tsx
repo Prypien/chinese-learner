@@ -25,14 +25,14 @@ export function AllVocabClient() {
           onClick={() => setView("list")}
           className="mb-6 text-sm text-zinc-500 hover:text-red-600"
         >
-          ← Zurück zur Liste
+          ← Back to list
         </button>
         <VocabPractice
           vocabulary={filtered}
           title={
             lessonFilter === "all"
-              ? "Alle Vokabeln"
-              : `Lektion ${lessonFilter}`
+              ? "All vocabulary"
+              : `Lesson ${lessonFilter}`
           }
         />
       </div>
@@ -42,7 +42,7 @@ export function AllVocabClient() {
   return (
     <div>
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-zinc-500">{filtered.length} Wörter</p>
+        <p className="text-sm text-zinc-500">{filtered.length} words</p>
         <select
           value={lessonFilter}
           onChange={(e) =>
@@ -52,10 +52,10 @@ export function AllVocabClient() {
           }
           className="rounded-lg border border-zinc-300 px-3 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-800"
         >
-          <option value="all">Alle Lektionen</option>
+          <option value="all">All lessons</option>
           {[1, 2, 3, 4].map((n) => (
             <option key={n} value={n}>
-              Lektion {n}
+              Lesson {n}
             </option>
           ))}
         </select>
@@ -68,7 +68,7 @@ export function AllVocabClient() {
         onClick={() => setView("practice")}
         className="mt-8 w-full rounded-xl bg-red-600 py-3 font-medium text-white hover:bg-red-700"
       >
-        {filtered.length} Wörter üben →
+        Practice {filtered.length} words →
       </button>
     </div>
   );

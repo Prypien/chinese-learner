@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
-import { AllVocabClient } from "@/components/AllVocabClient";
+import { JensTextClient } from "@/components/JensTextClient";
 
-export default function VokabelnPage() {
+export default function JensTextPage() {
   return (
     <>
       <Header />
@@ -11,15 +11,15 @@ export default function VokabelnPage() {
           href="/"
           className="mb-6 inline-block text-sm text-zinc-500 hover:text-red-600"
         >
-          ← Zurück
+          ← Back
         </Link>
         <h1 className="mb-2 text-2xl font-bold text-zinc-900 dark:text-zinc-100">
-          Vokabeln
+          Jen&apos;s text · vocabulary
         </h1>
         <p className="mb-8 text-sm text-zinc-500">
-          Alle Wörter aus L1–L4 · filtern und schreiben üben
+          All words and characters from your introduction for the exam
         </p>
-        <AllVocabClient />
+        <JensTextClient />
       </main>
     </>
   );

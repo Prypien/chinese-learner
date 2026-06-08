@@ -54,11 +54,11 @@ export function CustomVocabClient() {
           onClick={() => setView("pick")}
           className="mb-6 text-sm text-zinc-500 hover:text-red-600"
         >
-          ← Auswahl ändern
+          ← Change selection
         </button>
         <VocabPractice
           vocabulary={selectedVocab}
-          title={`Eigene Vokabeln (${selectedVocab.length})`}
+          title={`Custom vocabulary (${selectedVocab.length})`}
         />
       </div>
     );
@@ -68,7 +68,7 @@ export function CustomVocabClient() {
     <div>
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
         <p className="text-sm text-zinc-500">
-          {selectedIds.size} Wörter ausgewählt
+          {selectedIds.size} words selected
         </p>
         <div className="flex flex-wrap gap-2">
           <select
@@ -80,10 +80,10 @@ export function CustomVocabClient() {
             }
             className="rounded-lg border border-zinc-300 px-3 py-1.5 text-sm dark:border-zinc-700 dark:bg-zinc-800"
           >
-            <option value="all">Alle Lektionen</option>
+            <option value="all">All lessons</option>
             {[1, 2, 3, 4].map((n) => (
               <option key={n} value={n}>
-                Lektion {n}
+                Lesson {n}
               </option>
             ))}
           </select>
@@ -92,14 +92,14 @@ export function CustomVocabClient() {
             onClick={handleSelectAll}
             className="rounded-lg bg-zinc-100 px-3 py-1.5 text-sm dark:bg-zinc-800"
           >
-            Alle sichtbaren wählen
+            Select all visible
           </button>
           <button
             type="button"
             onClick={handleClear}
             className="rounded-lg px-3 py-1.5 text-sm text-zinc-500 hover:text-red-600"
           >
-            Leeren
+            Clear
           </button>
         </div>
       </div>
@@ -118,8 +118,8 @@ export function CustomVocabClient() {
         className="mt-8 w-full rounded-xl bg-red-600 py-3 font-medium text-white hover:bg-red-700 disabled:opacity-40"
       >
         {selectedIds.size > 0
-          ? `${selectedIds.size} Wörter üben →`
-          : "Wörter auswählen"}
+          ? `Practice ${selectedIds.size} words →`
+          : "Select words to practice"}
       </button>
     </div>
   );

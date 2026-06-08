@@ -24,11 +24,11 @@ export function VocabTable({
           <tr>
             {selectable && <th className="w-10 px-4 py-3" />}
             {showLesson && (
-              <th className="px-4 py-3 font-medium">Lektion</th>
+              <th className="px-4 py-3 font-medium">Lesson</th>
             )}
-            <th className="px-4 py-3 font-medium">繁體字</th>
+            <th className="px-4 py-3 font-medium">Traditional</th>
             <th className="px-4 py-3 font-medium">Pinyin</th>
-            <th className="px-4 py-3 font-medium">Deutsch</th>
+            <th className="px-4 py-3 font-medium">English</th>
           </tr>
         </thead>
         <tbody>

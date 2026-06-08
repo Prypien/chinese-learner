@@ -1,11 +1,8 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
-import { LessonCard } from "@/components/LessonCard";
-import { getAllLessons } from "@/lib/lessons";
+import { CustomVocabClient } from "@/components/CustomVocabClient";
 
-export default function LektionenPage() {
-  const lessons = getAllLessons();
-
+export default function CustomVocabularyPage() {
   return (
     <>
       <Header />
@@ -14,19 +11,15 @@ export default function LektionenPage() {
           href="/"
           className="mb-6 inline-block text-sm text-zinc-500 hover:text-red-600"
         >
-          ← Zurück
+          ← Back
         </Link>
         <h1 className="mb-2 text-2xl font-bold text-zinc-900 dark:text-zinc-100">
-          Lektionen
+          Custom vocabulary
         </h1>
         <p className="mb-8 text-sm text-zinc-500">
-          Vokabeln und Schreibübungen pro Lektion
+          Pick the words you want to practice — your selection is saved.
         </p>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {lessons.map((lesson) => (
-            <LessonCard key={lesson.id} lesson={lesson} />
-          ))}
-        </div>
+        <CustomVocabClient />
       </main>
     </>
   );

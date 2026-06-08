@@ -15,22 +15,28 @@ export function Header() {
         </Link>
         <nav className="flex items-center gap-1 text-sm sm:gap-2">
           <Link
-            href="/lektionen"
-            className="rounded-lg px-3 py-1.5 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800"
+            href="/lessons"
+            className="hidden rounded-lg px-3 py-1.5 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800 sm:inline-block"
           >
-            Lektionen
+            Lessons
           </Link>
           <Link
-            href="/vokabeln"
-            className="rounded-lg px-3 py-1.5 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800"
+            href="/vocabulary"
+            className="hidden rounded-lg px-3 py-1.5 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800 md:inline-block"
           >
-            Vokabeln
+            Vocabulary
           </Link>
           <Link
-            href="/eigene-vokabeln"
+            href="/jens-text"
+            className="rounded-lg px-3 py-1.5 font-medium text-emerald-700 hover:bg-emerald-50 dark:text-emerald-400 dark:hover:bg-emerald-950/30"
+          >
+            Jen&apos;s Text
+          </Link>
+          <Link
+            href="/custom-vocabulary"
             className="rounded-lg bg-red-600 px-3 py-1.5 font-medium text-white hover:bg-red-700"
           >
-            Eigene
+            Custom
           </Link>
         </nav>
       </div>

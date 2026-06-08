@@ -29,7 +29,7 @@ function LessonProgressClient({ lesson }: { lesson: Lesson }) {
     <div>
       <div className="mb-1 flex justify-between text-xs text-zinc-500">
         <span>
-          L{lesson.id}: {mastered}/{total} Vokabeln
+          L{lesson.id}: {mastered}/{total} words
         </span>
         <span>{pct}%</span>
       </div>
@@ -52,7 +52,7 @@ export function LessonCard({ lesson }: LessonCardProps) {
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-xs font-medium uppercase tracking-wide text-red-600 dark:text-red-400">
-            Lektion {lesson.id}
+            Lesson {lesson.id}
           </p>
           <h3 className="font-chinese mt-1 text-2xl font-semibold text-zinc-900 group-hover:text-red-700 dark:text-zinc-100 dark:group-hover:text-red-400">
             {lesson.title.zh}
@@ -67,7 +67,7 @@ export function LessonCard({ lesson }: LessonCardProps) {
         <LessonProgressClient lesson={lesson} />
       </div>
       <p className="mt-3 text-xs text-zinc-400">
-        {lesson.vocabulary.length} Vokabeln
+        {lesson.vocabulary.length} words
       </p>
     </Link>
   );
