@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chinese Learner
 
-## Getting Started
+Handwriting practice for **A Course in Contemporary Chinese** (當代中文課程), Book 1, Lessons 1–4 — Traditional Chinese.
 
-First, run the development server:
+**Live site:** https://prypien.github.io/chinese-learner/
+
+The app is **fully static** (HTML, CSS, JavaScript). No server is required in production. GitHub Pages hosts the built files from the `out/` folder.
+
+## Features
+
+- **Lessons** — vocabulary and practice per lesson (L1–L4)
+- **Vocabulary** — all words, filterable by lesson
+- **Jen's text** — characters from Jen's self-introduction for exam prep
+- **Custom vocabulary** — pick your own word list (saved in the browser)
+- **Three practice modes** — with outline, no outline, from memory (pinyin hint)
+
+Works on iPad with Apple Pencil in Safari.
+
+## Build & deploy
+
+Production build (same as GitHub Actions):
+
+```bash
+npm install
+npm run build
+```
+
+Output goes to `out/`. Push to `main` and GitHub Actions deploys to Pages automatically.
+
+Local preview (matches GitHub Pages):
+
+```bash
+npm run preview
+```
+
+Open http://localhost:4173/chinese-learner/
+
+## Development (optional)
+
+Only needed when editing the app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js](https://nextjs.org) static export (`output: "export"`)
+- [Hanzi Writer](https://chanind.github.io/hanzi-writer/) for stroke practice
+- Character stroke data bundled at build time (no external CDN)
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Private learning project.
