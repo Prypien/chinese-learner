@@ -12,6 +12,10 @@ declare module "hanzi-writer" {
     drawingWidth?: number;
     outlineColor?: string;
     onLoadCharDataError?: (reason: string) => void;
+    charDataLoader?: (
+      char: string,
+      onComplete: (data: unknown) => void
+    ) => void;
   }
 
   interface QuizOptions {

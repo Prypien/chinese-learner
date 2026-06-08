@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "build:pages": "NEXT_PUBLIC_BASE_PATH=/chinese-learner next build",
-    "start": "next start",
+    "dev": "node scripts/copy-char-data.mjs && next dev",
+    "build": "node scripts/copy-char-data.mjs && next build",
+    "preview": "npx --yes serve out -l 4173",
     "lint": "eslint"
   },
   "dependencies": {
     "hanzi-writer": "^3.7.3",
+    "hanzi-writer-data": "^2.0.1",
     "next": "16.2.7",
     "react": "19.2.4",
     "react-dom": "19.2.4"

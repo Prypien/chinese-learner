@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import HanziWriter from "hanzi-writer";
+import { staticAsset } from "@/lib/base-path";
 
 export interface CharacterWriterProps {
   character: string;
@@ -61,6 +62,15 @@ export function CharacterWriter({
       drawingColor: "#dc2626",
       drawingWidth: 22,
       highlightColor: "#dc2626",
+      charDataLoader: (char, onComplete) => {
+        fetch(staticAsset(`/char-data/${encodeURIComponent(char)}.json`))
+          .then((res) => {
+            if (!res.ok) throw new Error("missing char data");
+            return res.json();
+          })
+          .then(onComplete)
+          .catch(() => onErrorRef.current());
+      },
       onLoadCharDataError: () => onErrorRef.current(),
     });
 
