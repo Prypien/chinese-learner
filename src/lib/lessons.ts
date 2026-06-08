@@ -25,30 +25,6 @@ export function getAllVocabulary() {
   );
 }
 
-export function getAllGrammarExercises() {
-  return lessons.flatMap((l) =>
-    l.grammar.flatMap((g) =>
-      g.exercises.map((e) => ({
-        ...e,
-        lessonId: l.id,
-        grammarTitle: g.title.de,
-      }))
-    )
-  );
-}
-
-export function getAllComprehensionQuestions() {
-  return lessons.flatMap((l) =>
-    l.dialogues.flatMap((d) =>
-      d.comprehensionQuestions.map((q) => ({
-        ...q,
-        lessonId: l.id,
-        dialogueTitle: d.title.de,
-      }))
-    )
-  );
-}
-
 export function getVocabById(id: string) {
   return getAllVocabulary().find((v) => v.id === id);
 }

@@ -2,7 +2,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import { LessonDetail } from "@/components/LessonDetail";
-import { getLesson } from "@/lib/lessons";
+import { getAllLessons, getLesson } from "@/lib/lessons";
+
+export function generateStaticParams() {
+  return getAllLessons().map((lesson) => ({
+    id: String(lesson.id),
+  }));
+}
 
 export default async function LessonPage({
   params,
@@ -20,10 +26,10 @@ export default async function LessonPage({
       <Header />
       <main className="mx-auto max-w-4xl flex-1 px-4 py-8">
         <Link
-          href="/"
+          href="/lektionen"
           className="mb-6 inline-block text-sm text-zinc-500 hover:text-red-600"
         >
-          ← Zurück
+          ← Lektionen
         </Link>
         <LessonDetail lesson={lesson} />
       </main>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import HanziWriter from "hanzi-writer";
 
 export interface CharacterWriterProps {
@@ -11,13 +11,32 @@ export interface CharacterWriterProps {
   size?: number;
 }
 
+function useWriterSize(defaultSize: number) {
+  const [size, setSize] = useState(defaultSize);
+
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      if (w < 480) setSize(Math.min(w - 48, 320));
+      else if (w < 900) setSize(300);
+      else setSize(defaultSize);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, [defaultSize]);
+
+  return size;
+}
+
 export function CharacterWriter({
   character,
   showOutline,
   onComplete,
   onError,
-  size = 260,
+  size: defaultSize = 260,
 }: CharacterWriterProps) {
+  const size = useWriterSize(defaultSize);
   const containerRef = useRef<HTMLDivElement>(null);
   const onCompleteRef = useRef(onComplete);
   const onErrorRef = useRef(onError);
@@ -40,7 +59,7 @@ export function CharacterWriter({
       strokeColor: "#71717a",
       outlineColor: "#e4e4e7",
       drawingColor: "#dc2626",
-      drawingWidth: 18,
+      drawingWidth: 22,
       highlightColor: "#dc2626",
       onLoadCharDataError: () => onErrorRef.current(),
     });
@@ -61,7 +80,7 @@ export function CharacterWriter({
   return (
     <div
       ref={containerRef}
-      className="touch-none select-none [&_svg]:mx-auto"
+      className="touch-none select-none [-webkit-touch-callout:none] [&_svg]:mx-auto"
       aria-label={`Zeichne ${character}`}
     />
   );

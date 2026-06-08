@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
-import { WeakVocabReview } from "@/components/WeakVocabReview";
+import { AllVocabClient } from "@/components/AllVocabClient";
 
-export default function ReviewPage() {
+export default function VokabelnPage() {
   return (
     <>
       <Header />
@@ -14,12 +14,12 @@ export default function ReviewPage() {
           ← Zurück
         </Link>
         <h1 className="mb-2 text-2xl font-bold text-zinc-900 dark:text-zinc-100">
-          Schwächen wiederholen
+          Vokabeln
         </h1>
-        <p className="mb-6 text-sm text-zinc-500">
-          Wörter, die du falsch beantwortet hast, erscheinen hier automatisch.
+        <p className="mb-8 text-sm text-zinc-500">
+          Alle Wörter aus L1–L4 · filtern und schreiben üben
         </p>
-        <WeakVocabReview />
+        <AllVocabClient />
       </main>
     </>
   );

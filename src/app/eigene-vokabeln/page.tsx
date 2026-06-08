@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
-import { VocabSearch } from "@/components/VocabSearch";
+import { CustomVocabClient } from "@/components/CustomVocabClient";
 
-export default function SuchePage() {
+export default function EigeneVokabelnPage() {
   return (
     <>
       <Header />
@@ -14,13 +14,13 @@ export default function SuchePage() {
           ← Zurück
         </Link>
         <h1 className="mb-2 text-2xl font-bold text-zinc-900 dark:text-zinc-100">
-          Wortsuche
+          Eigene Vokabeln
         </h1>
-        <p className="mb-6 text-sm text-zinc-500">
-          Auf Deutsch oder Pinyin suchen, Treffer antippen und die Zeichen
-          zeichnen.
+        <p className="mb-8 text-sm text-zinc-500">
+          Wähle die Wörter aus, die du üben willst — deine Auswahl wird
+          gespeichert.
         </p>
-        <VocabSearch />
+        <CustomVocabClient />
       </main>
     </>
   );

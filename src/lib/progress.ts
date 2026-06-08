@@ -42,28 +42,6 @@ export function recordVocabResult(
   return stats;
 }
 
-export function recordGrammarResult(
-  exerciseId: string,
-  correct: boolean
-): ProgressStats {
-  const stats = loadProgress();
-  if (correct) {
-    stats.grammarCompleted[exerciseId] = true;
-  } else {
-    delete stats.grammarCompleted[exerciseId];
-  }
-  saveProgress(stats);
-  return stats;
-}
-
-export function getWeakVocabIds(): string[] {
-  const stats = loadProgress();
-  return Object.entries(stats.weakVocab)
-    .filter(([, count]) => count > 0)
-    .sort((a, b) => b[1] - a[1])
-    .map(([id]) => id);
-}
-
 export function getLessonVocabProgress(
   vocabIds: string[]
 ): { mastered: number; total: number } {

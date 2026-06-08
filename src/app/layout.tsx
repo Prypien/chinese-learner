@@ -16,7 +16,18 @@ const notoSansTC = Noto_Sans_TC({
 export const metadata: Metadata = {
   title: "Chinese Learner — 當代中文課程 L1–L4",
   description:
-    "Klausurvorbereitung für 當代中文課程 Band 1, Lektionen 1–4. Vokabeln, Grammatik, Dialoge.",
+    "Zeichen schreiben üben für 當代中文課程 Band 1, Lektionen 1–4.",
+  appleWebApp: {
+    capable: true,
+    title: "Chinese Learner",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({

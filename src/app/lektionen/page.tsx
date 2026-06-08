@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
-import { JenIntroPractice } from "@/components/JenIntroPractice";
+import { LessonCard } from "@/components/LessonCard";
+import { getAllLessons } from "@/lib/lessons";
 
-export default function MeinTextPage() {
+export default function LektionenPage() {
+  const lessons = getAllLessons();
+
   return (
     <>
       <Header />
@@ -14,13 +17,16 @@ export default function MeinTextPage() {
           ← Zurück
         </Link>
         <h1 className="mb-2 text-2xl font-bold text-zinc-900 dark:text-zinc-100">
-          Mein Text · 我的介紹
+          Lektionen
         </h1>
         <p className="mb-8 text-sm text-zinc-500">
-          Übe alle Zeichen aus deiner persönlichen Vorstellung — aus dem Heft
-          vom 07.06.2026.
+          Vokabeln und Schreibübungen pro Lektion
         </p>
-        <JenIntroPractice />
+        <div className="grid gap-4 sm:grid-cols-2">
+          {lessons.map((lesson) => (
+            <LessonCard key={lesson.id} lesson={lesson} />
+          ))}
+        </div>
       </main>
     </>
   );

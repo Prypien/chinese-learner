@@ -3,8 +3,17 @@
 import { useCallback, useEffect, useState } from "react";
 import type { VocabItem } from "@/lib/types";
 import { splitCharacters } from "@/lib/characters";
+import { getCharPinyin } from "@/lib/pinyin-split";
 import { recordVocabResult } from "@/lib/progress";
 import { CharacterWriter } from "./CharacterWriter";
+
+export type HandwritingMode = "help" | "no-outline" | "memory";
+
+export const HANDWRITING_MODE_LABELS: Record<HandwritingMode, string> = {
+  help: "Mit Hilfe",
+  "no-outline": "Ohne Umriss",
+  memory: "Aus dem Kopf",
+};
 
 function shuffle<T>(items: T[]): T[] {
   const copy = [...items];
@@ -17,19 +26,23 @@ function shuffle<T>(items: T[]): T[] {
 
 interface HandwritingQuizProps {
   vocabulary: VocabItem[];
+  mode: HandwritingMode;
   title?: string;
   onComplete?: (score: number, total: number) => void;
 }
 
 export function HandwritingQuiz({
   vocabulary,
+  mode,
   title,
   onComplete,
 }: HandwritingQuizProps) {
+  const showOutline = mode === "help";
+  const showCharacter = mode !== "memory";
+
   const [queue, setQueue] = useState<VocabItem[]>([]);
   const [index, setIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
-  const [showOutline, setShowOutline] = useState(true);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [charLoadError, setCharLoadError] = useState(false);
@@ -41,7 +54,7 @@ export function HandwritingQuiz({
     setScore(0);
     setFinished(false);
     setCharLoadError(false);
-  }, [vocabulary]);
+  }, [vocabulary, mode]);
 
   const current = queue[index];
   const characters = current ? splitCharacters(current.traditional) : [];
@@ -97,7 +110,7 @@ export function HandwritingQuiz({
 
   if (!vocabulary.length) {
     return (
-      <p className="text-zinc-500">Keine Vokabeln für Schreibübung verfügbar.</p>
+      <p className="text-zinc-500">Keine Vokabeln ausgewählt.</p>
     );
   }
 
@@ -105,10 +118,10 @@ export function HandwritingQuiz({
     return (
       <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-8 text-center dark:border-emerald-900 dark:bg-emerald-950/30">
         <p className="text-2xl font-semibold text-emerald-800 dark:text-emerald-200">
-          Schreibübung beendet!
+          Geschafft!
         </p>
         <p className="mt-2 text-lg text-emerald-700 dark:text-emerald-300">
-          {score} von {queue.length} richtig gezeichnet
+          {score} von {queue.length} Wörtern
         </p>
         {!onComplete && (
           <button
@@ -132,6 +145,9 @@ export function HandwritingQuiz({
   if (!current || !currentChar) return null;
 
   const allCharsDone = charIndex >= characters.length;
+  const charHint = showCharacter
+    ? currentChar
+    : getCharPinyin(current, charIndex);
 
   return (
     <div className="mx-auto max-w-xl">
@@ -140,38 +156,48 @@ export function HandwritingQuiz({
           {title}
         </h2>
       )}
-      <p className="mb-6 text-sm text-zinc-500">
-        Zeichne die Zeichen mit der Maus (oder dem Finger). Erst wenn alle Striche
-        stimmen, geht es weiter.
-      </p>
 
       <div className="mb-2 flex items-center justify-between text-sm text-zinc-500">
         <span>
           Wort {index + 1} / {queue.length}
           {characters.length > 1 && (
-            <> · Zeichen {Math.min(charIndex + 1, characters.length)} / {characters.length}</>
+            <>
+              {" "}
+              · Zeichen {Math.min(charIndex + 1, characters.length)} /{" "}
+              {characters.length}
+            </>
           )}
         </span>
         <span>Richtig: {score}</span>
       </div>
 
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-        <p className="text-sm uppercase tracking-wide text-zinc-400">Aufgabe</p>
+        <p className="text-sm uppercase tracking-wide text-zinc-400">Deutsch</p>
         <p className="mt-1 text-2xl font-medium text-zinc-900 dark:text-zinc-100">
           {current.german}
         </p>
-        <p className="mt-1 text-lg text-zinc-500">{current.pinyin}</p>
+        {mode === "memory" && (
+          <p className="mt-1 text-lg text-zinc-500">{current.pinyin}</p>
+        )}
 
         <div className="mt-6 flex flex-col items-center">
           {!allCharsDone && !charLoadError && (
             <>
-              <p className="font-chinese mb-2 text-sm text-zinc-400">
+              <p className="mb-2 text-sm text-zinc-400">
                 Zeichne:{" "}
-                <span className="text-2xl text-red-600">{currentChar}</span>
+                {showCharacter ? (
+                  <span className="font-chinese text-2xl text-red-600">
+                    {charHint}
+                  </span>
+                ) : (
+                  <span className="text-2xl font-medium text-red-600">
+                    {charHint}
+                  </span>
+                )}
               </p>
               <div className="rounded-xl border-2 border-dashed border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800/50">
                 <CharacterWriter
-                  key={`${current.id}-${charIndex}-${showOutline}`}
+                  key={`${current.id}-${charIndex}-${showOutline}-${mode}`}
                   character={currentChar}
                   showOutline={showOutline}
                   onComplete={handleCharComplete}
@@ -186,9 +212,7 @@ export function HandwritingQuiz({
               <p className="font-chinese text-5xl text-emerald-600">
                 {current.traditional}
               </p>
-              <p className="mt-3 text-emerald-700 dark:text-emerald-300">
-                Gut gemacht!
-              </p>
+              <p className="mt-1 text-zinc-500">{current.pinyin}</p>
               <button
                 type="button"
                 onClick={advanceWord}
@@ -229,29 +253,27 @@ export function HandwritingQuiz({
             {characters.map((c, i) => (
               <span
                 key={i}
-                className={`font-chinese flex h-10 w-10 items-center justify-center rounded-lg text-xl ${
+                className={`flex h-10 min-w-10 items-center justify-center rounded-lg px-1 text-sm ${
                   i < charIndex
-                    ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40"
+                    ? "bg-emerald-100 font-chinese text-xl text-emerald-700 dark:bg-emerald-900/40"
                     : i === charIndex
                       ? "bg-red-100 text-red-700 ring-2 ring-red-400 dark:bg-red-900/40"
                       : "bg-zinc-100 text-zinc-400 dark:bg-zinc-800"
                 }`}
               >
-                {i < charIndex ? c : i === charIndex ? "?" : "·"}
+                {i < charIndex
+                  ? c
+                  : i === charIndex
+                    ? showCharacter
+                      ? "?"
+                      : getCharPinyin(current, i)
+                    : "·"}
               </span>
             ))}
           </div>
         )}
 
-        <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-zinc-100 pt-4 dark:border-zinc-800">
-          <label className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-            <input
-              type="checkbox"
-              checked={showOutline}
-              onChange={(e) => setShowOutline(e.target.checked)}
-            />
-            Umriss als Hilfe anzeigen
-          </label>
+        <div className="mt-6 flex justify-end border-t border-zinc-100 pt-4 dark:border-zinc-800">
           <button
             type="button"
             onClick={handleSkipChar}
@@ -260,10 +282,6 @@ export function HandwritingQuiz({
             Wort überspringen
           </button>
         </div>
-
-        <p className="mt-2 text-center text-xs text-zinc-400">
-          Tipp: Nach 3 Fehlversuchen wird der nächste Strich hervorgehoben.
-        </p>
       </div>
     </div>
   );

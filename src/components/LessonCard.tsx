@@ -67,8 +67,7 @@ export function LessonCard({ lesson }: LessonCardProps) {
         <LessonProgressClient lesson={lesson} />
       </div>
       <p className="mt-3 text-xs text-zinc-400">
-        {lesson.vocabulary.length} Vokabeln · {lesson.grammar.length} Grammatik
-        · {lesson.dialogues.length} Dialoge
+        {lesson.vocabulary.length} Vokabeln
       </p>
     </Link>
   );

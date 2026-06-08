@@ -1,12 +1,31 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
-import { LessonCard } from "@/components/LessonCard";
-import { HomeProgress } from "@/components/WeakVocabReview";
-import { getAllLessons } from "@/lib/lessons";
+
+const SECTIONS = [
+  {
+    href: "/lektionen",
+    title: "Lektionen",
+    subtitle: "L1–L4 · Übersicht & pro Lektion üben",
+    emoji: "📖",
+    primary: true,
+  },
+  {
+    href: "/vokabeln",
+    title: "Vokabeln",
+    subtitle: "Alle Wörter · filtern & schreiben üben",
+    emoji: "词",
+    primary: false,
+  },
+  {
+    href: "/eigene-vokabeln",
+    title: "Eigene Vokabeln",
+    subtitle: "Wörter auswählen · eigene Liste testen",
+    emoji: "✓",
+    primary: false,
+  },
+] as const;
 
 export default function HomePage() {
-  const lessons = getAllLessons();
-
   return (
     <>
       <Header />
@@ -16,74 +35,41 @@ export default function HomePage() {
             當代中文課程
           </h1>
           <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-            Lektionen 1–4 · Traditionelles Chinesisch · Klausurvorbereitung
+            Zeichen schreiben üben · Lektionen 1–4
           </p>
         </div>
 
-        <HomeProgress lessons={lessons} />
-
-        <div className="mb-8 grid gap-4 sm:grid-cols-2">
-          <Link
-            href="/schreiben"
-            className="flex items-center justify-between rounded-2xl bg-red-600 p-6 text-white shadow-lg transition hover:bg-red-700"
-          >
-            <div>
-              <p className="text-lg font-semibold">Zeichen schreiben</p>
-              <p className="text-sm text-red-100">
-                Mit der Maus zeichnen — Klausur-Modus
+        <div className="grid gap-4 sm:grid-cols-3">
+          {SECTIONS.map((section) => (
+            <Link
+              key={section.href}
+              href={section.href}
+              className={`flex flex-col rounded-2xl p-6 transition ${
+                section.primary
+                  ? "bg-red-600 text-white shadow-lg hover:bg-red-700"
+                  : "border border-zinc-200 bg-white hover:border-red-300 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-red-800"
+              }`}
+            >
+              <span className="text-2xl">{section.emoji}</span>
+              <p
+                className={`mt-3 text-lg font-semibold ${
+                  section.primary
+                    ? "text-white"
+                    : "text-zinc-900 dark:text-zinc-100"
+                }`}
+              >
+                {section.title}
               </p>
-            </div>
-            <span className="text-2xl">✍️</span>
-          </Link>
-          <Link
-            href="/mein-text"
-            className="flex items-center justify-between rounded-2xl border-2 border-emerald-200 bg-emerald-50 p-6 transition hover:border-emerald-400 dark:border-emerald-900 dark:bg-emerald-950/20"
-          >
-            <div>
-              <p className="text-lg font-semibold text-emerald-800 dark:text-emerald-200">
-                Mein Text
+              <p
+                className={`mt-1 text-sm ${
+                  section.primary
+                    ? "text-red-100"
+                    : "text-zinc-500"
+                }`}
+              >
+                {section.subtitle}
               </p>
-              <p className="text-sm text-emerald-700/80 dark:text-emerald-300/80">
-                Deine Vorstellung · alle Zeichen zeichnen
-              </p>
-            </div>
-            <span className="text-2xl">📝</span>
-          </Link>
-          <Link
-            href="/vorstellung"
-            className="flex items-center justify-between rounded-2xl border-2 border-red-200 bg-red-50 p-6 transition hover:border-red-400 dark:border-red-900 dark:bg-red-950/20 sm:col-span-2"
-          >
-            <div>
-              <p className="text-lg font-semibold text-red-800 dark:text-red-200">
-                Self-Introduction
-              </p>
-              <p className="text-sm text-red-700/80 dark:text-red-300/80">
-                Vorstellung schreiben · 自我介紹
-              </p>
-            </div>
-            <span className="text-2xl">🙋</span>
-          </Link>
-        </div>
-
-        <Link
-          href="/exam"
-          className="mb-8 flex items-center justify-between rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm transition hover:border-red-300 dark:border-zinc-800 dark:bg-zinc-900"
-        >
-          <div>
-            <p className="font-semibold text-zinc-900 dark:text-zinc-100">
-              Prüfungsmodus
-            </p>
-            <p className="text-sm text-zinc-500">Gemischter Test · L1–L4</p>
-          </div>
-          <span className="text-xl text-zinc-300">→</span>
-        </Link>
-
-        <h2 className="mb-4 text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-          Lektionen
-        </h2>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {lessons.map((lesson) => (
-            <LessonCard key={lesson.id} lesson={lesson} />
+            </Link>
           ))}
         </div>
       </main>
