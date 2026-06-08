@@ -1,0 +1,302 @@
+{
+  "id": 1,
+  "title": {
+    "zh": "歡迎你來臺灣！",
+    "pinyin": "Huānyíng nǐ lái Táiwān!",
+    "de": "Willkommen in Taiwan!"
+  },
+  "objectives": [
+    "Sich vorstellen und andere begrüßen",
+    "Ja/Nein-Fragen mit 嗎 und A-不-A bilden",
+    "Herkunft und Vorlieben ausdrücken",
+    "Höfliche Ausdrücke verwenden"
+  ],
+  "dialogues": [
+    {
+      "id": "l1-d1",
+      "title": {
+        "zh": "對話一",
+        "pinyin": "Duìhuà yī",
+        "de": "Dialog I — Am Flughafen"
+      },
+      "lines": [
+        {
+          "speaker": "王開文",
+          "zh": "陳小姐，你好！歡迎你來臺灣！",
+          "pinyin": "Chén xiǎojiě, nǐ hǎo! Huānyíng nǐ lái Táiwān!",
+          "de": "Fräulein Chen, hallo! Willkommen in Taiwan!"
+        },
+        {
+          "speaker": "陳月美",
+          "zh": "謝謝！",
+          "pinyin": "Xièxie!",
+          "de": "Danke!"
+        },
+        {
+          "speaker": "王開文",
+          "zh": "你是越南人嗎？",
+          "pinyin": "Nǐ shì Yuènán rén ma?",
+          "de": "Bist du Vietnamesin?"
+        },
+        {
+          "speaker": "陳月美",
+          "zh": "是的，我是越南人。你呢？",
+          "pinyin": "Shì de, wǒ shì Yuènán rén. Nǐ ne?",
+          "de": "Ja, ich bin Vietnamesin. Und du?"
+        },
+        {
+          "speaker": "王開文",
+          "zh": "我是美國人。",
+          "pinyin": "Wǒ shì Měiguó rén.",
+          "de": "Ich bin Amerikaner."
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "id": "l1-d1-q1",
+          "questionDe": "Ist 陳月美 Vietnamesin?",
+          "answerType": "yesno",
+          "correctAnswer": "ja"
+        },
+        {
+          "id": "l1-d1-q2",
+          "questionDe": "Woher kommt 王開文?",
+          "answerType": "text",
+          "correctAnswer": "美國",
+          "acceptableAnswers": ["amerika", "usa", "美國", "從美國"]
+        },
+        {
+          "id": "l1-d1-q3",
+          "questionDe": "Was bedeutet 你呢？",
+          "answerType": "text",
+          "correctAnswer": "und du",
+          "acceptableAnswers": ["und du?", "und du", "was ist mit dir"]
+        }
+      ]
+    },
+    {
+      "id": "l1-d2",
+      "title": {
+        "zh": "對話二",
+        "pinyin": "Duìhuà èr",
+        "de": "Dialog II — Tee oder Kaffee?"
+      },
+      "lines": [
+        {
+          "speaker": "李明華",
+          "zh": "田中先生，你要不要喝咖啡？",
+          "pinyin": "Tiánzhōng xiānshēng, nǐ yào bu yào hē kāfēi?",
+          "de": "Herr Tanaka, möchtest du Kaffee trinken?"
+        },
+        {
+          "speaker": "田中誠一",
+          "zh": "不要，謝謝。我想喝茶。",
+          "pinyin": "Bú yào, xièxie. Wǒ xiǎng hē chá.",
+          "de": "Nein danke. Ich möchte Tee trinken."
+        },
+        {
+          "speaker": "李明華",
+          "zh": "烏龍茶好不好？",
+          "pinyin": "Wūlóng chá hǎo bù hǎo?",
+          "de": "Wie wäre es mit Oolong-Tee?"
+        },
+        {
+          "speaker": "田中誠一",
+          "zh": "好啊！臺灣人喜不喜歡喝茶？",
+          "pinyin": "Hǎo a! Táiwān rén xǐ bu xǐhuān hē chá?",
+          "de": "Gerne! Trinken Taiwanese gerne Tee?"
+        },
+        {
+          "speaker": "李明華",
+          "zh": "喜歡，臺灣人很喜歡喝烏龍茶。",
+          "pinyin": "Xǐhuān, Táiwān rén hěn xǐhuān hē wūlóng chá.",
+          "de": "Ja, Taiwanese trinken sehr gerne Oolong-Tee."
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "id": "l1-d2-q1",
+          "questionDe": "Möchte 田中誠一 Kaffee trinken?",
+          "answerType": "yesno",
+          "correctAnswer": "nein"
+        },
+        {
+          "id": "l1-d2-q2",
+          "questionDe": "Was möchte 田中誠一 trinken?",
+          "answerType": "text",
+          "correctAnswer": "茶",
+          "acceptableAnswers": ["tee", "茶", "烏龍茶", "oolong"]
+        },
+        {
+          "id": "l1-d2-q3",
+          "questionDe": "Trinken Taiwanese gerne Tee?",
+          "answerType": "yesno",
+          "correctAnswer": "ja"
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    { "id": "l1-v01", "traditional": "你好", "pinyin": "nǐ hǎo", "german": "Hallo", "pos": "Grüßformel" },
+    { "id": "l1-v02", "traditional": "我", "pinyin": "wǒ", "german": "ich", "pos": "Pronomen" },
+    { "id": "l1-v03", "traditional": "你", "pinyin": "nǐ", "german": "du", "pos": "Pronomen" },
+    { "id": "l1-v04", "traditional": "他", "pinyin": "tā", "german": "er", "pos": "Pronomen" },
+    { "id": "l1-v05", "traditional": "我們", "pinyin": "wǒmen", "german": "wir", "pos": "Pronomen" },
+    { "id": "l1-v06", "traditional": "你們", "pinyin": "nǐmen", "german": "ihr", "pos": "Pronomen" },
+    { "id": "l1-v07", "traditional": "是", "pinyin": "shì", "german": "sein", "pos": "Verb" },
+    { "id": "l1-v08", "traditional": "叫", "pinyin": "jiào", "german": "heißen", "pos": "Verb" },
+    { "id": "l1-v09", "traditional": "姓", "pinyin": "xìng", "german": "Familienname tragen", "pos": "Verb" },
+    { "id": "l1-v10", "traditional": "要", "pinyin": "yào", "german": "wollen", "pos": "Verb" },
+    { "id": "l1-v11", "traditional": "喝", "pinyin": "hē", "german": "trinken", "pos": "Verb" },
+    { "id": "l1-v12", "traditional": "喜歡", "pinyin": "xǐhuān", "german": "mögen", "pos": "Verb" },
+    { "id": "l1-v13", "traditional": "想", "pinyin": "xiǎng", "german": "möchten / vermissen", "pos": "Verb" },
+    { "id": "l1-v14", "traditional": "來", "pinyin": "lái", "german": "kommen", "pos": "Verb" },
+    { "id": "l1-v15", "traditional": "接", "pinyin": "jiē", "german": "abholen", "pos": "Verb" },
+    { "id": "l1-v16", "traditional": "不", "pinyin": "bù", "german": "nicht", "pos": "Adverb" },
+    { "id": "l1-v17", "traditional": "很", "pinyin": "hěn", "german": "sehr", "pos": "Adverb" },
+    { "id": "l1-v18", "traditional": "好", "pinyin": "hǎo", "german": "gut", "pos": "Adjektiv" },
+    { "id": "l1-v19", "traditional": "嗎", "pinyin": "ma", "german": "Fragepartikel (Ja/Nein)", "pos": "Partikel" },
+    { "id": "l1-v20", "traditional": "呢", "pinyin": "ne", "german": "Partikel (und du?)", "pos": "Partikel" },
+    { "id": "l1-v21", "traditional": "啊", "pinyin": "a", "german": "Partikel (Bestätigung)", "pos": "Partikel" },
+    { "id": "l1-v22", "traditional": "什麼", "pinyin": "shénme", "german": "was", "pos": "Fragewort" },
+    { "id": "l1-v23", "traditional": "哪", "pinyin": "nǎ", "german": "welche(r/s)", "pos": "Fragewort" },
+    { "id": "l1-v24", "traditional": "人", "pinyin": "rén", "german": "Mensch / Person", "pos": "Nomen" },
+    { "id": "l1-v25", "traditional": "先生", "pinyin": "xiānshēng", "german": "Herr", "pos": "Nomen" },
+    { "id": "l1-v26", "traditional": "小姐", "pinyin": "xiǎojiě", "german": "Fräulein / Frau", "pos": "Nomen" },
+    { "id": "l1-v27", "traditional": "老師", "pinyin": "lǎoshī", "german": "Lehrer/in", "pos": "Nomen" },
+    { "id": "l1-v28", "traditional": "茶", "pinyin": "chá", "german": "Tee", "pos": "Nomen" },
+    { "id": "l1-v29", "traditional": "烏龍茶", "pinyin": "wūlóng chá", "german": "Oolong-Tee", "pos": "Nomen" },
+    { "id": "l1-v30", "traditional": "咖啡", "pinyin": "kāfēi", "german": "Kaffee", "pos": "Nomen" },
+    { "id": "l1-v31", "traditional": "臺灣", "pinyin": "Táiwān", "german": "Taiwan", "pos": "Nomen" },
+    { "id": "l1-v32", "traditional": "日本", "pinyin": "Rìběn", "german": "Japan", "pos": "Nomen" },
+    { "id": "l1-v33", "traditional": "美國", "pinyin": "Měiguó", "german": "USA / Amerika", "pos": "Nomen" },
+    { "id": "l1-v34", "traditional": "歡迎", "pinyin": "huānyíng", "german": "willkommen", "pos": "Verb" },
+    { "id": "l1-v35", "traditional": "謝謝", "pinyin": "xièxie", "german": "danke", "pos": "Grüßformel" },
+    { "id": "l1-v36", "traditional": "不客氣", "pinyin": "bú kèqì", "german": "gern geschehen", "pos": "Grüßformel" },
+    { "id": "l1-v37", "traditional": "對不起", "pinyin": "duìbuqǐ", "german": "entschuldigung", "pos": "Grüßformel" },
+    { "id": "l1-v38", "traditional": "請", "pinyin": "qǐng", "german": "bitte", "pos": "Grüßformel" },
+    { "id": "l1-v39", "traditional": "請進", "pinyin": "qǐng jìn", "german": "bitte hereinkommen", "pos": "Grüßformel" },
+    { "id": "l1-v40", "traditional": "是的", "pinyin": "shì de", "german": "ja", "pos": "Antwort" },
+    { "id": "l1-v41", "traditional": "電話", "pinyin": "diànhuà", "german": "Telefon", "pos": "Nomen" },
+    { "id": "l1-v42", "traditional": "就", "pinyin": "jiù", "german": "dann / eben", "pos": "Adverb" },
+    { "id": "l1-v43", "traditional": "陳月美", "pinyin": "Chén Yuèměi", "german": "Chen Yuemei (Name)", "pos": "Eigenname" },
+    { "id": "l1-v44", "traditional": "王開文", "pinyin": "Wáng Kāiwén", "german": "Wang Kaiwen (Name)", "pos": "Eigenname" }
+  ],
+  "grammar": [
+    {
+      "id": "l1-g1",
+      "title": { "zh": "嗎 — Ja/Nein-Fragen", "de": "Fragen mit 嗎" },
+      "pattern": "Aussage + 嗎？",
+      "explanationDe": "An das Ende einer Aussage wird 嗎 gesetzt, um eine Ja/Nein-Frage zu bilden. Die Wortstellung bleibt gleich.",
+      "examples": [
+        { "zh": "你是李小姐嗎？", "pinyin": "Nǐ shì Lǐ xiǎojiě ma?", "de": "Bist du Fräulein Li?" },
+        { "zh": "他是日本人嗎？", "pinyin": "Tā shì Rìběn rén ma?", "de": "Ist er Japaner?" }
+      ],
+      "exercises": [
+        {
+          "id": "l1-g1-e1",
+          "type": "fill-blank",
+          "promptDe": "Setze die richtige Partikel ein (Ja/Nein-Frage):",
+          "sentenceBefore": "你好",
+          "sentenceAfter": "？",
+          "correctAnswer": "嗎",
+          "hintDe": "Fragepartikel für Ja/Nein-Fragen"
+        },
+        {
+          "id": "l1-g1-e2",
+          "type": "fill-blank",
+          "promptDe": "Setze die richtige Partikel ein:",
+          "sentenceBefore": "你是越南人",
+          "sentenceAfter": "？",
+          "correctAnswer": "嗎"
+        }
+      ]
+    },
+    {
+      "id": "l1-g2",
+      "title": { "zh": "呢 — Und du?", "de": "Nachfrage mit 呢" },
+      "pattern": "Aussage，Subject + 呢？",
+      "explanationDe": "呢 wird für Gegenfragen verwendet: „Und du?“ / „Was ist mit …?“",
+      "examples": [
+        { "zh": "我很好，你呢？", "pinyin": "Wǒ hěn hǎo, nǐ ne?", "de": "Mir geht es gut, und dir?" },
+        { "zh": "我是美國人，你呢？", "pinyin": "Wǒ shì Měiguó rén, nǐ ne?", "de": "Ich bin Amerikaner, und du?" }
+      ],
+      "exercises": [
+        {
+          "id": "l1-g2-e1",
+          "type": "fill-blank",
+          "promptDe": "Ergänze die Partikel für „und du?“:",
+          "sentenceBefore": "我是越南人，你",
+          "sentenceAfter": "？",
+          "correctAnswer": "呢"
+        },
+        {
+          "id": "l1-g2-e2",
+          "type": "fill-blank",
+          "promptDe": "Ergänze:",
+          "sentenceBefore": "我很好，你",
+          "sentenceAfter": "？",
+          "correctAnswer": "呢"
+        }
+      ]
+    },
+    {
+      "id": "l1-g3",
+      "title": { "zh": "很 — Graduierung", "de": "很 vor Adjektiven" },
+      "pattern": "Subjekt + 很 + Adjektiv",
+      "explanationDe": "很 steht vor Zustandsverben/Adjektiven und bedeutet oft „sehr“, wird aber auch ohne starke Betonung verwendet.",
+      "examples": [
+        { "zh": "我很好。", "pinyin": "Wǒ hěn hǎo.", "de": "Mir geht es gut." },
+        { "zh": "臺灣人很喜歡喝茶。", "pinyin": "Táiwān rén hěn xǐhuān hē chá.", "de": "Taiwanese trinken sehr gerne Tee." }
+      ],
+      "exercises": [
+        {
+          "id": "l1-g3-e1",
+          "type": "fill-blank",
+          "promptDe": "Ergänze das Adverb:",
+          "sentenceBefore": "我",
+          "sentenceAfter": "好。",
+          "correctAnswer": "很"
+        },
+        {
+          "id": "l1-g3-e2",
+          "type": "fill-blank",
+          "promptDe": "Ergänze:",
+          "sentenceBefore": "臺灣人",
+          "sentenceAfter": "喜歡喝茶。",
+          "correctAnswer": "很"
+        }
+      ]
+    },
+    {
+      "id": "l1-g4",
+      "title": { "zh": "不 — Verneinung", "de": "Verneinung mit 不" },
+      "pattern": "Subjekt + 不 + Verb",
+      "explanationDe": "不 steht vor dem Verb, um zu verneinen.",
+      "examples": [
+        { "zh": "我不喜歡咖啡。", "pinyin": "Wǒ bù xǐhuān kāfēi.", "de": "Ich mag keinen Kaffee." },
+        { "zh": "他不是日本人。", "pinyin": "Tā bú shì Rìběn rén.", "de": "Er ist kein Japaner." }
+      ],
+      "exercises": [
+        {
+          "id": "l1-g4-e1",
+          "type": "fill-blank",
+          "promptDe": "Verneine den Satz:",
+          "sentenceBefore": "我",
+          "sentenceAfter": "喜歡咖啡。",
+          "correctAnswer": "不",
+          "acceptableAnswers": ["不", "bù"]
+        },
+        {
+          "id": "l1-g4-e2",
+          "type": "yes-no-pattern",
+          "promptDe": "Wie lautet die kurze negative Antwort auf „你要不要喝咖啡？“",
+          "sentenceBefore": "",
+          "sentenceAfter": "",
+          "correctAnswer": "不要",
+          "acceptableAnswers": ["不要", "不要，謝謝", "bú yào"]
+        }
+      ]
+    }
+  ]
+}

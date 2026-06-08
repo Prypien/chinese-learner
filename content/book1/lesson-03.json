@@ -1,0 +1,301 @@
+{
+  "id": 3,
+  "title": {
+    "zh": "週末做什麼？",
+    "pinyin": "Zhōumò zuò shénme?",
+    "de": "Was machst du am Wochenende?"
+  },
+  "objectives": [
+    "Freizeitaktivitäten beschreiben",
+    "Einladungen mit 吧 machen",
+    "Vorschläge mit 怎麼樣 / 好不好 formulieren",
+    "也, 都, 常 richtig verwenden"
+  ],
+  "dialogues": [
+    {
+      "id": "l3-d1",
+      "title": {
+        "zh": "對話一",
+        "pinyin": "Duìhuà yī",
+        "de": "Dialog I — Wochenendpläne"
+      },
+      "lines": [
+        {
+          "speaker": "白如玉",
+          "zh": "週末你想做什麼？",
+          "pinyin": "Zhōumò nǐ xiǎng zuò shénme?",
+          "de": "Was möchtest du am Wochenende machen?"
+        },
+        {
+          "speaker": "王開文",
+          "zh": "我想去看電影。你呢？",
+          "pinyin": "Wǒ xiǎng qù kàn diànyǐng. Nǐ ne?",
+          "de": "Ich möchte ins Kino gehen. Und du?"
+        },
+        {
+          "speaker": "白如玉",
+          "zh": "我想去打籃球。",
+          "pinyin": "Wǒ xiǎng qù dǎ lánqiú.",
+          "de": "Ich möchte Basketball spielen gehen."
+        },
+        {
+          "speaker": "王開文",
+          "zh": "我們一起去看電影吧！",
+          "pinyin": "Wǒmen yìqǐ qù kàn diànyǐng ba!",
+          "de": "Lass uns zusammen ins Kino gehen!"
+        },
+        {
+          "speaker": "白如玉",
+          "zh": "好啊！",
+          "pinyin": "Hǎo a!",
+          "de": "Gerne!"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "id": "l3-d1-q1",
+          "questionDe": "Was möchte 王開文 am Wochenende machen?",
+          "answerType": "text",
+          "correctAnswer": "看電影",
+          "acceptableAnswers": ["ins kino", "film schauen", "看電影", "電影"]
+        },
+        {
+          "id": "l3-d1-q2",
+          "questionDe": "Was möchte 白如玉 machen?",
+          "answerType": "text",
+          "correctAnswer": "打籃球",
+          "acceptableAnswers": ["basketball", "打籃球", "籃球"]
+        },
+        {
+          "id": "l3-d1-q3",
+          "questionDe": "Gehen sie am Ende ins Kino?",
+          "answerType": "yesno",
+          "correctAnswer": "ja"
+        }
+      ]
+    },
+    {
+      "id": "l3-d2",
+      "title": {
+        "zh": "對話二",
+        "pinyin": "Duìhuà èr",
+        "de": "Dialog II — Sport und Musik"
+      },
+      "lines": [
+        {
+          "speaker": "陳月美",
+          "zh": "你常打棒球嗎？",
+          "pinyin": "Nǐ cháng dǎ bàngqiú ma?",
+          "de": "Spielst du oft Baseball?"
+        },
+        {
+          "speaker": "田中誠一",
+          "zh": "不常，我比較喜歡游泳。",
+          "pinyin": "Bù cháng, wǒ bǐjiào xǐhuān yóuyǒng.",
+          "de": "Nicht oft, ich schwimme lieber."
+        },
+        {
+          "speaker": "陳月美",
+          "zh": "週末去游泳怎麼樣？",
+          "pinyin": "Zhōumò qù yóuyǒng zěnmeyàng?",
+          "de": "Wie wäre es am Wochenende schwimmen zu gehen?"
+        },
+        {
+          "speaker": "田中誠一",
+          "zh": "好啊！我也喜歡聽音樂。",
+          "pinyin": "Hǎo a! Wǒ yě xǐhuān tīng yīnyuè.",
+          "de": "Gerne! Ich höre auch gerne Musik."
+        },
+        {
+          "speaker": "陳月美",
+          "zh": "臺灣人也很喜歡運動。",
+          "pinyin": "Táiwān rén yě hěn xǐhuān yùndòng.",
+          "de": "Taiwanese treiben auch sehr gerne Sport."
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "id": "l3-d2-q1",
+          "questionDe": "Was mag 田中誠一 lieber als Baseball?",
+          "answerType": "text",
+          "correctAnswer": "游泳",
+          "acceptableAnswers": ["schwimmen", "游泳"]
+        },
+        {
+          "id": "l3-d2-q2",
+          "questionDe": "Spielt 田中誠一 oft Baseball?",
+          "answerType": "yesno",
+          "correctAnswer": "nein"
+        },
+        {
+          "id": "l3-d2-q3",
+          "questionDe": "Was mag 田中誠一 auch?",
+          "answerType": "text",
+          "correctAnswer": "音樂",
+          "acceptableAnswers": ["musik", "音樂", "聽音樂"]
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    { "id": "l3-v01", "traditional": "週末", "pinyin": "zhōumò", "german": "Wochenende", "pos": "Nomen" },
+    { "id": "l3-v02", "traditional": "現在", "pinyin": "xiànzài", "german": "jetzt", "pos": "Nomen" },
+    { "id": "l3-v03", "traditional": "也", "pinyin": "yě", "german": "auch", "pos": "Adverb" },
+    { "id": "l3-v04", "traditional": "常", "pinyin": "cháng", "german": "oft", "pos": "Adverb" },
+    { "id": "l3-v05", "traditional": "和", "pinyin": "hé", "german": "und / mit", "pos": "Konjunktion" },
+    { "id": "l3-v06", "traditional": "吧", "pinyin": "ba", "german": "Partikel (Vorschlag)", "pos": "Partikel" },
+    { "id": "l3-v07", "traditional": "怎麼樣", "pinyin": "zěnmeyàng", "german": "wie wäre es?", "pos": "Fragewort" },
+    { "id": "l3-v08", "traditional": "好不好", "pinyin": "hǎo bù hǎo", "german": "okay? / wie wäre es?", "pos": "Fragewort" },
+    { "id": "l3-v09", "traditional": "非常", "pinyin": "fēicháng", "german": "sehr / außerordentlich", "pos": "Adverb" },
+    { "id": "l3-v10", "traditional": "覺得", "pinyin": "juéde", "german": "finden / denken", "pos": "Verb" },
+    { "id": "l3-v11", "traditional": "習慣", "pinyin": "xíguàn", "german": "Gewohnheit / sich gewöhnen", "pos": "Nomen/Verb" },
+    { "id": "l3-v12", "traditional": "可能", "pinyin": "kěnéng", "german": "möglich / vielleicht", "pos": "Adverb" },
+    { "id": "l3-v13", "traditional": "吃", "pinyin": "chī", "german": "essen", "pos": "Verb" },
+    { "id": "l3-v14", "traditional": "看", "pinyin": "kàn", "german": "sehen / schauen", "pos": "Verb" },
+    { "id": "l3-v15", "traditional": "打", "pinyin": "dǎ", "german": "spielen (Ball) / schlagen", "pos": "Verb", "searchTerms": ["tennis spielen", "ball spielen"] },
+    { "id": "l3-v16", "traditional": "踢", "pinyin": "tī", "german": "treten / Fußball spielen", "pos": "Verb", "searchTerms": ["fußball", "fussball", "fußball spielen", "fussball spielen", "soccer"] },
+    { "id": "l3-v17", "traditional": "教", "pinyin": "jiāo", "german": "unterrichten", "pos": "Verb" },
+    { "id": "l3-v18", "traditional": "游泳", "pinyin": "yóuyǒng", "german": "schwimmen", "pos": "Verb" },
+    { "id": "l3-v19", "traditional": "做飯", "pinyin": "zuò fàn", "german": "kochen", "pos": "Verb" },
+    { "id": "l3-v20", "traditional": "笑", "pinyin": "xiào", "german": "lachen / lächeln", "pos": "Verb" },
+    { "id": "l3-v21", "traditional": "電影", "pinyin": "diànyǐng", "german": "Film", "pos": "Nomen" },
+    { "id": "l3-v22", "traditional": "音樂", "pinyin": "yīnyuè", "german": "Musik", "pos": "Nomen" },
+    { "id": "l3-v23", "traditional": "棒球", "pinyin": "bàngqiú", "german": "Baseball", "pos": "Nomen" },
+    { "id": "l3-v24", "traditional": "籃球", "pinyin": "lánqiú", "german": "Basketball", "pos": "Nomen" },
+    { "id": "l3-v25", "traditional": "好玩", "pinyin": "hǎowán", "german": "interessant / spaßig", "pos": "Adjektiv" },
+    { "id": "l3-v26", "traditional": "便宜", "pinyin": "piányi", "german": "billig", "pos": "Adjektiv" },
+    { "id": "l3-v27", "traditional": "冷", "pinyin": "lěng", "german": "kalt", "pos": "Adjektiv" },
+    { "id": "l3-v28", "traditional": "甜點", "pinyin": "tiándiǎn", "german": "Dessert", "pos": "Nomen" },
+    { "id": "l3-v29", "traditional": "麵線", "pinyin": "miànxiàn", "german": "dünne Nudeln", "pos": "Nomen" },
+    { "id": "l3-v30", "traditional": "大家", "pinyin": "dàjiā", "german": "alle / zusammen", "pos": "Pronomen" },
+    { "id": "l3-v31", "traditional": "機會", "pinyin": "jīhuì", "german": "Gelegenheit", "pos": "Nomen" },
+    { "id": "l3-v32", "traditional": "藥局", "pinyin": "yàojú", "german": "Apotheke", "pos": "Nomen" },
+    { "id": "l3-v33", "traditional": "月", "pinyin": "yuè", "german": "Monat", "pos": "Nomen" },
+    { "id": "l3-v34", "traditional": "點", "pinyin": "diǎn", "german": "Uhr / Punkt", "pos": "Nomen" },
+    { "id": "l3-v35", "traditional": "那", "pinyin": "nà", "german": "das / dort", "pos": "Pronomen" },
+    { "id": "l3-v36", "traditional": "對", "pinyin": "duì", "german": "richtig / gegenüber", "pos": "Adjektiv" },
+    { "id": "l3-v37", "traditional": "把", "pinyin": "bǎ", "german": "把-Konstruktion (Marker)", "pos": "Partikel" },
+    { "id": "l3-v38", "traditional": "妳", "pinyin": "nǐ", "german": "du (weiblich)", "pos": "Pronomen" },
+    { "id": "l3-v39", "traditional": "白如玉", "pinyin": "Bái Rúyù", "german": "Bai Ruyu (Name)", "pos": "Eigenname" },
+    { "id": "l3-v40", "traditional": "網球", "pinyin": "wǎngqiú", "german": "Tennis", "pos": "Nomen", "searchTerms": ["tennis spielen", "tennis"] },
+    { "id": "l3-v41", "traditional": "足球", "pinyin": "zúqiú", "german": "Fußball", "pos": "Nomen", "searchTerms": ["fußball spielen", "fussball spielen", "fussball", "soccer"] },
+    { "id": "l3-v42", "traditional": "打網球", "pinyin": "dǎ wǎngqiú", "german": "Tennis spielen", "pos": "Phrase", "searchTerms": ["tennis", "tennis spielen"] },
+    { "id": "l3-v43", "traditional": "踢足球", "pinyin": "tī zúqiú", "german": "Fußball spielen", "pos": "Phrase", "searchTerms": ["fußball", "fussball", "soccer"] },
+    { "id": "l3-v44", "traditional": "運動", "pinyin": "yùndòng", "german": "Sport / trainieren", "pos": "Nomen/Verb", "searchTerms": ["sport", "sport treiben"] },
+    { "id": "l3-v45", "traditional": "健身房", "pinyin": "jiànshēnfáng", "german": "Fitnessstudio", "pos": "Nomen", "searchTerms": ["fitnessstudio", "fitness studio", "gym", "jianshenfang"] }
+  ],
+  "grammar": [
+    {
+      "id": "l3-g1",
+      "title": { "zh": "去 + Verb", "de": "去 + Verb (hin gehen und etwas tun)" },
+      "pattern": "Subjekt + 去 + Verb-Phrase",
+      "explanationDe": "去 + Verb bedeutet „hingehen und etwas tun“: 去看電影 = ins Kino gehen.",
+      "examples": [
+        { "zh": "我想去看電影。", "pinyin": "Wǒ xiǎng qù kàn diànyǐng.", "de": "Ich möchte ins Kino gehen." },
+        { "zh": "週末去游泳。", "pinyin": "Zhōumò qù yóuyǒng.", "de": "Am Wochenende schwimmen gehen." }
+      ],
+      "exercises": [
+        {
+          "id": "l3-g1-e1",
+          "type": "fill-blank",
+          "promptDe": "Ergänze „gehen“:",
+          "sentenceBefore": "我想",
+          "sentenceAfter": "看電影。",
+          "correctAnswer": "去"
+        },
+        {
+          "id": "l3-g1-e2",
+          "type": "fill-blank",
+          "promptDe": "Ergänze:",
+          "sentenceBefore": "週末",
+          "sentenceAfter": "打籃球。",
+          "correctAnswer": "去"
+        }
+      ]
+    },
+    {
+      "id": "l3-g2",
+      "title": { "zh": "也 — auch", "de": "也 für „auch“" },
+      "pattern": "Subjekt + 也 + Prädikat",
+      "explanationDe": "也 steht vor dem Verb und bedeutet „auch“.",
+      "examples": [
+        { "zh": "我也喜歡游泳。", "pinyin": "Wǒ yě xǐhuān yóuyǒng.", "de": "Ich schwimme auch gerne." },
+        { "zh": "他也是美國人。", "pinyin": "Tā yě shì Měiguó rén.", "de": "Er ist auch Amerikaner." }
+      ],
+      "exercises": [
+        {
+          "id": "l3-g2-e1",
+          "type": "fill-blank",
+          "promptDe": "Ergänze „auch“:",
+          "sentenceBefore": "我",
+          "sentenceAfter": "喜歡聽音樂。",
+          "correctAnswer": "也"
+        },
+        {
+          "id": "l3-g2-e2",
+          "type": "fill-blank",
+          "promptDe": "Ergänze:",
+          "sentenceBefore": "臺灣人",
+          "sentenceAfter": "很喜歡運動。",
+          "correctAnswer": "也"
+        }
+      ]
+    },
+    {
+      "id": "l3-g3",
+      "title": { "zh": "吧 — Vorschlag", "de": "Vorschläge mit 吧" },
+      "pattern": "Satz + 吧",
+      "explanationDe": "吧 am Satzende macht einen freundlichen Vorschlag: „Lass uns …“",
+      "examples": [
+        { "zh": "我們去看電影吧！", "pinyin": "Wǒmen qù kàn diànyǐng ba!", "de": "Lass uns ins Kino gehen!" },
+        { "zh": "去游泳吧！", "pinyin": "Qù yóuyǒng ba!", "de": "Lass uns schwimmen gehen!" }
+      ],
+      "exercises": [
+        {
+          "id": "l3-g3-e1",
+          "type": "fill-blank",
+          "promptDe": "Mach einen Vorschlag:",
+          "sentenceBefore": "我們去看電影",
+          "sentenceAfter": "！",
+          "correctAnswer": "吧"
+        },
+        {
+          "id": "l3-g3-e2",
+          "type": "fill-blank",
+          "promptDe": "Ergänze:",
+          "sentenceBefore": "去喝咖啡",
+          "sentenceAfter": "！",
+          "correctAnswer": "吧"
+        }
+      ]
+    },
+    {
+      "id": "l3-g4",
+      "title": { "zh": "怎麼樣 — Wie wäre es?", "de": "Vorschlag mit 怎麼樣" },
+      "pattern": "Aktivität + 怎麼樣？",
+      "explanationDe": "怎麼樣 am Ende fragt „Wie wäre es mit …?“",
+      "examples": [
+        { "zh": "週末去游泳怎麼樣？", "pinyin": "Zhōumò qù yóuyǒng zěnmeyàng?", "de": "Wie wäre es am Wochenende schwimmen zu gehen?" },
+        { "zh": "看電影怎麼樣？", "pinyin": "Kàn diànyǐng zěnmeyàng?", "de": "Wie wäre es mit einem Film?" }
+      ],
+      "exercises": [
+        {
+          "id": "l3-g4-e1",
+          "type": "fill-blank",
+          "promptDe": "Ergänze „wie wäre es?“:",
+          "sentenceBefore": "週末去游泳",
+          "sentenceAfter": "？",
+          "correctAnswer": "怎麼樣"
+        },
+        {
+          "id": "l3-g4-e2",
+          "type": "fill-blank",
+          "promptDe": "Ergänze:",
+          "sentenceBefore": "看電影",
+          "sentenceAfter": "？",
+          "correctAnswer": "怎麼樣"
+        }
+      ]
+    }
+  ]
+}
